@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../src/scss/modules/module-01.scss","../../src/scss/modules/module-02.scss"],"names":[],"mappings":"AAAA;EACE;;;ACDF;EACE","file":"styles.css"}
+{"version":3,"sourceRoot":"","sources":["../../src/scss/modules/joaotrinidad20.scss","../../src/scss/modules/module-01.scss","../../src/scss/modules/module-02.scss"],"names":[],"mappings":"AAAQ;ACAR;EACE;;;ACDF;EACE;;;AFCF;EACI;;;AAGJ;EACI;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;;;AAGJ;EACI;;;AAGJ;EACI","file":"styles.css"}

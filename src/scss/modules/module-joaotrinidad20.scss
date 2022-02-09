@@ -1,0 +1,34 @@
+@import url(/src/fonts/fonts.css);
+
+body {
+    background-color: hsl(230, 17%, 14%);
+}
+
+* {
+    color:hsl(0, 0%, 100%);
+    font-style:[Inter];
+    font: size 14px;;
+    font-weight:400, 700;
+}
+
+.card {
+    background-color: hsl(228, 28%, 20%);
+    padding: 40px 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+.card2 {
+    background-color: hsl(228, 28%, 20%);
+    padding: 40px 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+.updates {
+    color:hsl(163, 72%, 41%);
+}
+
+.updates2 {
+    color:hsl(356, 69%, 56%);
+}
