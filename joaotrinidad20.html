@@ -8,113 +8,130 @@
 
     <title>Social Media Dashboard (with Dark Mode)</title>
 
-    <link rel="stylesheet" href="./fonts.css" />
+    <link rel="stylesheet" href="src/fonts/fonts.css" />
     <link rel="stylesheet" href="./dist/css/styles.css" />
     <script type="text/javascript" src="./dist/js/scripts.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
-    <h1>Social Media Dashboard</h1>
-    <p>Total Followers: 23,004</p>
+    <h1 class="header">Social Media Dashboard</h1>
+    <p class="total">Total Followers: 23,004</p>
 
     <!-- TOGGLE -->
-    <button>Dark Mode</button>
+    <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+    </label>
+    <p class="buttonname">Dark Mode</p>
 
-    <p></p>
-
-    <!-- FACEBOOK -->
-    <div class="card">
-    <p class="username">
-        <img class="logo" src="src/images/icon-facebook.svg"/>
-        @nathanf
-    </p>
-    <p class="numbers">1987</p>
-    <p class="followers">FOLLOWERS</p>
-    <p class="updates">
-        <img src="src/images/icon-up.svg"/>
-        12 Today
-    </p>
+   <div class="boxtop">
+        <!-- FACEBOOK -->
+        <div class="card">
+        <div class="facebookborder">
+        <p class="username">
+            <img class="logo" src="src/images/icon-facebook.svg"/>
+            @nathanf
+        </p>
+        <p class="numbers">1987</p>
+        <p class="interactiontop">FOLLOWERS</p>
+        <p class="updates">
+            <img src="src/images/icon-up.svg"/>
+            12 Today
+        </p>
+        </div>
     </div>
 
     <!-- TWITTER -->
     <div class="card">
+    <div class="twitterborder">
     <p class="username">
         <img src="src/images/icon-twitter.svg"/>
         @nathanf
     </p>
     <p class="numbers">1044</p>
-    <p class="followers">FOLLOWERS</p>
+    <p class="interactiontop">FOLLOWERS</p>
     <p class="updates">
         <img class="logo" src="src/images/icon-up.svg"/>
         99 Today
     </p>
     </div>
+    </div>
 
     <!-- INSTAGRAM -->
     <div class="card">
+    <div class="instagramborder">
     <p class="username">
         <img class="logo" src="src/images/icon-instagram.svg"/>
         @realnathanf
     </p>
     <p class="numbers">11k</p>
-    <p class="followers">FOLLOWERS</p>
+    <p class="interactiontop">FOLLOWERS</p>
     <p class="updates">
         <img class="logo" src="src/images/icon-up.svg"/>
         1099 Today
     </p>
     </div>
+    </div>
 
     <!-- YOUTUBE -->
     <div class="card">
+    <div class="youtubeborder">
     <p class="username">
         <img class="logo" src="src/images/icon-youtube.svg">
         Nathan F.
     </p>
     <p class="numbers">8239</p>
-    <p class="followers">SUBSCRIBERS</p>
+    <p class="interactiontop">SUBSCRIBERS</p>
     <p class="updates2">
         <img class="logo" src="src/images/icon-down.svg"/>
         164 Today
     </p>
     </div>
+    </div>
+    </div>
 
     <!-- OVERVIEW - Today -->
-    <h3>Overview - Today</h3>
+    <div class="boxbottomheader">
+        <h2>Overview - Today</h2>
+    </div> 
 
+    <div class="boxbottom">
     <!-- Facebook Page Viewers -->
     <div class="card2">
-    <p class="Page Views"></p>
+    <p class="interaction">
     Page Views
     <img class="logo" src="src/images/icon-facebook.svg"/>
     </p>
-    <p class="Number of Page Views">87</p>
-    <p class="updates"></p>
+    <div class="a">
+    <p class="numbersbottom">87</p>
+    <p class="updates">
             <img src="src/images/icon-up.svg"/>
             3%
         </p>
     </div>
+    </div>
 
     <!-- Facebook Likes -->
     <div class="card2">
-        <p class="likes"></p>
+        <p class="interaction">
         Page Views
             <img class="logo" src="src/images/icon-facebook.svg"/>
         </p>
-        <p class="nolikes">52</p>
-        <p class="updates"></p>
-                <img src="src/images/icon-up.svg"/>
+        <p class="numbersbottom">52</p>
+        <p class="updates2">
+                <img src="src/images/icon-down.svg"/>
                 2%
             </p>
      </div>
 
     <!-- Instragram Likes -->
     <div class="card2">
-        <p class="likes"></p>
+        <p class="interaction">
         Likes
             <img class="logo" src="src/images/icon-instagram.svg"/>
         </p>
-        <p class="nolikes">54</p>
-        <p class="updates"></p>
+        <p class="numbersbottom">54</p>
+        <p class="updates">
                 <img src="src/images/icon-up.svg"/>
                 2257%
             </p>
@@ -122,40 +139,43 @@
 
     <!-- Instagram Profile Views -->
     <div class="card2">
-        <p class="profileviews"></p>
+        <p class="interaction">
         Profile Views
             <img class="logo" src="src/images/icon-instagram.svg"/>
         </p>
-        <p class="views">52k</p>
-        <p class="updates"></p>
+        <p class="numbersbottom">52k</p>
+        <p class="updates">
                 <img src="src/images/icon-up.svg"/>
                 1375%
             </p>
      </div>
+     </div>
 
-    <p></p>
+    <br>
 
     <!-- Twitter Retweets -->
+    <div class="boxbottom">
     <div class="card2">
-        <p class="retweets"></p>
+        <p class="interaction">
         Retweets
             <img class="logo" src="src/images/icon-twitter.svg"/>
         </p>
-        <p class="rt">117</p>
-        <p class="updates"></p>
+        <p class="numbersbottom">117</p>
+        <p class="updates">
                 <img src="src/images/icon-up.svg"/>
                 303%
             </p>
      </div>
 
     <!-- Twitter Likes -->
+
     <div class="card2">
-        <p class="likes"></p>
+        <p class="interaction">
         Likes
             <img class="logo" src="src/images/icon-twitter.svg"/>
         </p>
-        <p class="nolikes">507</p>
-        <p class="updates"></p>
+        <p class="numbersbottom">507</p>
+        <p class="updates">
                 <img src="src/images/icon-up.svg"/>
                 552%
             </p>
@@ -163,12 +183,12 @@
 
     <!-- Youtube Likes -->
     <div class="card2">
-        <p class="likes"></p>
+        <p class="interaction">
         Likes
             <img class="logo" src="src/images/icon-youtube.svg"/>
         </p>
-        <p class="nolikes">107</p>
-        <p class="updates2"></p>
+        <p class="numbersbottom">107</p>
+        <p class="updates2">
                 <img src="src/images/icon-down.svg"/>
                 19%
             </p>
@@ -176,15 +196,16 @@
 
     <!-- Youtube Views -->
     <div class="card2">
-        <p class="views"></p>
+        <p class="interaction">
         Total Views
             <img class="logo" src="src/images/icon-youtube.svg"/>
         </p>
-        <p class="totalviews">1407</p>
-        <p class="updates2"></p>
+        <p class="numbersbottom">1407</p>
+        <p class="updates2">
                 <img src="src/images/icon-down.svg"/>
                 12%
             </p>
      </div>
+    </div>
   </body>
 </html>
