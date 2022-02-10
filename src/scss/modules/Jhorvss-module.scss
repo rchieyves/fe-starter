@@ -1,0 +1,167 @@
+@import url(/src/fonts/fonts.css);
+body {
+    background-color: #1e202a;
+}
+
+* {
+    color:#ffffff;
+    font-family:Inter;
+    font-size:14px;
+    font-weight:400, 700;
+}
+
+.switch {
+    color: #1db489;
+    position: absolute;
+    top: 50px;
+    right: 250px;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1db489;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #1e202a;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+
+.social-med-card-fb {
+    background-color: hsl(228, 28%, 20%);
+    padding: auto;
+    height: 200px;
+    width: 250px;
+    display: inline-block;
+    overflow: auto;
+    margin:80px 8px 30px 8px;
+    text-align: center;
+    justify-content: space-between;
+    border-top: 5px solid #198ff5;
+}
+
+.social-med-card-ig {
+    background-color: #252a41;
+    padding: auto;
+    height: 200px;
+    width: 250px;
+    display: inline-block;
+    overflow: auto;
+    margin:80px 8px 30px 8px;
+    text-align: center;
+    justify-content: space-between;
+    border-top: 5px solid #df4996;
+}
+
+.social-med-card-twitter {
+    background-color: #252a41;
+    padding: auto;
+    height: 200px;
+    width: 250px;
+    display: inline-block;
+    overflow: auto;
+    margin:80px 8px 30px 8px;
+    text-align: center;
+    justify-content: space-between;
+    border-top: 5px solid #1ca0f2;
+}
+
+.social-med-card-yt {
+    background-color: #252a41;
+    padding: auto;
+    height: 200px;
+    width: 250px;
+    display: inline-block;
+    overflow: auto;
+    margin:80px 8px 30px 8px;
+    text-align: center;
+    justify-content: space-between;
+    border-top: 5px solid #ff0000;
+}
+.social-med-card-update {
+    background-color: #252a41;
+    padding: auto;
+    height: 150px;
+    width: 250px;
+    display: inline-block;
+    overflow: auto;
+    margin: 1px 8px 1px 8px;
+    text-align: center;
+}
+
+.topcards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomcards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.positive-updates {
+    color:#1db489;
+}
+
+.negative-updates {
+    color:#dc414c;
+}
+
+.h1 {
+    font-size:25px;
+}
+
+.h2 {
+    font-size:18px;
+}
+
+.logo{
+    display: inline-block;
+    margin: 1px 10px
+}
