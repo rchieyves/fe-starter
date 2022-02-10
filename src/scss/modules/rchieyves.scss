@@ -1,0 +1,152 @@
+$top-BG-pattern: hsl(232, 19%, 15%);
+$bg-pattern: hsl(230, 17%, 14%);
+
+* {
+  font-family: 'Inter';
+  font-weights: 400, 700;
+
+}
+
+body {
+  background: linear-gradient(
+                  $top-BG-pattern 0%,
+                  $top-BG-pattern 30%,
+                  $bg-pattern 30%,
+                  $bg-pattern 100%) fixed;
+  padding: 2em 12em 0 12em;
+
+}
+
+
+header {
+  display: flex;
+  flex-direction: row;
+
+  h1, {
+    color: #fefefe;
+    margin: 0;
+  }
+
+  p {
+    color: hsl(228, 34%, 66%);
+    margin: 0;
+  }
+
+  .title{
+    width: 50%;
+  }
+
+  .toggle{
+    width: 50%;
+    margin: auto;
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+
+
+    label{
+
+    }
+
+    p{
+      color: hsl(228, 34%, 66%);
+      padding-right: 10px;
+    }
+
+    .switch{
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 20px;
+      float: right;
+    }
+
+    .slider{
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+      transition: .4s;
+    }
+
+    .switch input{
+      display: none;
+    }
+
+    .slider:before{
+      position: absolute;
+      content: "";
+      transition: .4s;
+    }
+
+    .slider.round{
+      border-radius: 35px;
+    }
+
+    .slider.round:before{
+      width: 30px;
+      height: 30px;
+    }
+
+  }
+}
+
+.main {
+  padding: 4em 0 0 0;
+  margin: auto;
+
+}
+
+.row {
+  display: inline-flex;
+  width: 100%;
+
+
+  .card {
+    border-radius: 5px;
+    background-color: hsl(228, 28%, 20%);
+    width: 22%;
+    text-align: center;
+    margin: auto;
+
+    .container {
+
+      p {
+        color: hsl(163, 72%, 41%)
+      }
+
+      h1 {
+        font-size: 60px;
+        color: #fefefe;
+        margin: 0;
+      }
+
+      h4 {
+        margin: 0;
+        padding-bottom: 15px;
+        color: hsl(228, 34%, 66%);
+      }
+    }
+
+    .container2{
+      padding: 1.5em;
+    }
+
+
+  }
+}
+
+.overviewToday {
+  padding: 2em 0 0 0;
+  h1 {
+    color: #fefefe;
+  }
+}
+
+
+
+
+

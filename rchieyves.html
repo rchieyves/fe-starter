@@ -1,61 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="icon" type="image/png" href="./images/favicon.png"/>
 
     <title>Social Media Dashboard (with Dark Mode)</title>
 
-    <link rel="stylesheet" href="./fonts.css" />
-    <link rel="stylesheet" href="./dist/css/styles.css" />
+    <link rel="stylesheet" href="./fonts.css"/>
+    <link rel="stylesheet" href="./dist/css/styles.css"/>
     <script type="text/javascript" src="./dist/js/scripts.js" defer></script>
-  </head>
-  <body>
-    <!-- HEADER -->
-    Social Media Dashboard Total Followers: 23,004
+</head>
+<body>
+<!-- HEADER -->
+<header>
+    <div class="title">
+        <h1>Social Media Dashboard </h1>
+        <p>Total Followers: 23,004</p>
+    </div>
 
-    <!-- TOGGLE -->
-    Dark Mode
 
-    <!-- FACEBOOK -->
-    @nathanf 1987 Followers 12 Today
+    <div class="toggle">
+        <p>Dark Mode</p>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
 
-    <!-- TWITTER -->
-    @nathanf 1044 Followers 99 Today
 
-    <!-- INSTAGRAM -->
-    @realnathanf 11k Followers 1099 Today
 
-    <!-- YOUTUBE -->
-    Nathan F. 8239 Subscribers 144 Today
+</header>
 
-    <!-- OVERVIEW -->
-    Overview - Today
+<div class="main">
 
-    <!--  -->
-    Page Views 87 3%
+    <div class="row">
 
-    <!--  -->
-    Likes 52 2%
+        <div class="card" style="border-top: 5px solid hsl(208, 92%, 53%)">
+            <div class="container">
+                <p style="color: hsl(228, 34%, 66%);"><img style="vertical-align: middle"
+                                                           src="src/images/icon-facebook.svg" alt="up-icon"> @nathanf
+                </p>
+                <h1>1987</h1>
+                <h4>F O L L O W E R S</h4>
+                <p><img style="width: 15px; length: 15px;" src="src/images/icon-up.svg" alt="up-icon"><b> 12 Today</b>
+                </p>
+            </div>
+        </div>
 
-    <!--  -->
-    Likes 5462 2257%
+        <div class="card" style="border-top: 5px solid hsl(203, 89%, 53%)">
+            <div class="container">
+                <p style="color: hsl(228, 34%, 66%);"><img style="vertical-align: middle"
+                                                           src="src/images/icon-twitter.svg" alt="up-icon"> @nathanf</p>
+                <h1>1004</h1>
+                <h4>F O L L O W E R S</h4>
+                <p><img style="width: 15px; length: 15px;" src="src/images/icon-up.svg" alt="up-icon"><b> 99 Today</b>
+                </p>
+            </div>
+        </div>
 
-    <!--  -->
-    Profile Views 52k 1375%
+        <div class="card" style="border-top: 5px solid hsl(37, 97%, 70%)">
+            <div class="container">
+                <p style="color: hsl(228, 34%, 66%);"><img style="vertical-align: middle"
+                                                           src="src/images/icon-instagram.svg" alt="up-icon"> @nathanf
+                </p>
+                <h1>11k</h1>
+                <h4>F O L L O W E R S</h4>
+                <p><img style="width: 15px; length: 15px;" src="src/images/icon-up.svg" alt="up-icon"><b> 144 Today</b>
+                </p>
+            </div>
+        </div>
 
-    <!--  -->
-    Retweets 117 303%
+        <div class="card" style="border-top: 5px solid hsl(348, 97%, 39%)">
+            <div class="container">
+                <p style="color: hsl(228, 34%, 66%);"><img style="vertical-align: middle"
+                                                           src="src/images/icon-youtube.svg" alt="up-icon"> @nathanf</p>
+                <h1>8239</h1>
+                <h4>F O L L O W E R S</h4>
+                <p style="color: hsl(356, 69%, 56%)"><img style="width: 15px; length: 15px;"
+                                                          src="src/images/icon-down.svg" alt="down-icon"><b> 12
+                    Today</b></p>
+            </div>
+        </div>
 
-    <!--  -->
-    Likes 507 553%
 
-    <!--  -->
-    Likes 107 19%
+    </div>
 
-    <!--  -->
-    Total Views 1407 12%
-  </body>
+
+    <div class="overviewToday">
+        <h1>Overview - Today</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="card">
+            <div class="container2">
+                <table style="width: 100%;">
+                    <tr>
+                        <th><p style="float: left; color: hsl(228, 34%, 66%);">Page Reviews</p></th>
+                        <th><p style="float: right"><img style="vertical-align: middle"
+                                                         src="src/images/icon-facebook.svg" alt="up-icon"></p></th>
+                    </tr>
+                    <tr>
+                        <td><h1 style="float: left; color: #fefefe;">87</h1></td>
+                        <td><p style="float: right; color: hsl(163, 72%, 41%)"><img style="width: 15px; length: 15px;" src="src/images/icon-up.svg" alt="up-icon"><b> 3%</b></p></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="container2">
+                <table style="width: 100%;">
+                    <tr>
+                        <th><p style="float: left; color: hsl(228, 34%, 66%);">Likes</p></th>
+                        <th><p style="float: right"><img style="vertical-align: middle"
+                                                         src="src/images/icon-facebook.svg" alt="up-icon"></p></th>
+                    </tr>
+                    <tr>
+                        <td><h1 style="float: left; color: #fefefe;">52</h1></td>
+                        <td><p style="float: right; color: hsl(356, 69%, 56%)"><img style="width: 15px; length: 15px;" src="src/images/icon-down.svg" alt="up-icon"><b> 2%</b></p></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="container2">
+                <table style="width: 100%;">
+                    <tr>
+                        <th><p style="float: left; color: hsl(228, 34%, 66%);">Likes</p></th>
+                        <th><p style="float: right"><img style="vertical-align: middle"
+                                                         src="src/images/icon-instagram.svg" alt="up-icon"></p></th>
+                    </tr>
+                    <tr>
+                        <td><h1 style="float: left; color: #fefefe;">5462</h1></td>
+                        <td><p style="float: right; color: hsl(163, 72%, 41%)"><img style="width: 15px; length: 15px;" src="src/images/icon-up.svg" alt="up-icon"><b> 2257%</b></p></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="container2">
+                <table style="width: 100%;">
+                    <tr>
+                        <th><p style="float: left; color: hsl(228, 34%, 66%);">Profile Views</p></th>
+                        <th><p style="float: right"><img style="vertical-align: middle"
+                                                         src="src/images/icon-instagram.svg" alt="up-icon"></p></th>
+                    </tr>
+                    <tr>
+                        <td><h1 style="float: left; color: #fefefe;">52k</h1></td>
+                        <td><p style="float: right; color: hsl(163, 72%, 41%)"><img style="width: 15px; length: 15px;" src="src/images/icon-up.svg" alt="up-icon"><b> 1375%</b></p></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <br>
+    <br>
+    <div class="row">
+
+        <div class="card">
+            <div class="container2">
+                <table style="width: 100%;">
+                    <tr>
+                        <th><p style="float: left; color: hsl(228, 34%, 66%);">Retweets</p></th>
+                        <th><p style="float: right"><img style="vertical-align: middle"
+                                                         src="src/images/icon-twitter.svg" alt="up-icon"></p></th>
+                    </tr>
+                    <tr>
+                        <td><h1 style="float: left; color: #fefefe;">117</h1></td>
+                        <td><p style="float: right; color: hsl(163, 72%, 41%)"><img style="width: 15px; length: 15px;" src="src/images/icon-up.svg" alt="up-icon"><b> 303%</b></p></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="container2">
+                <table style="width: 100%;">
+                    <tr>
+                        <th><p style="float: left; color: hsl(228, 34%, 66%);">Likes</p></th>
+                        <th><p style="float: right"><img style="vertical-align: middle"
+                                                         src="src/images/icon-twitter.svg" alt="up-icon"></p></th>
+                    </tr>
+                    <tr>
+                        <td><h1 style="float: left; color: #fefefe;">507</h1></td>
+                        <td><p style="float: right; color: hsl(163, 72%, 41%)"><img style="width: 15px; length: 15px;" src="src/images/icon-up.svg" alt="up-icon"><b> 553%</b></p></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="container2">
+                <table style="width: 100%;">
+                    <tr>
+                        <th><p style="float: left; color: hsl(228, 34%, 66%);">Likes</p></th>
+                        <th><p style="float: right"><img style="vertical-align: middle"
+                                                         src="src/images/icon-youtube.svg" alt="up-icon"></p></th>
+                    </tr>
+                    <tr>
+                        <td><h1 style="float: left; color: #fefefe;">107</h1></td>
+                        <td><p style="float: right; color: hsl(356, 69%, 56%)"><img style="width: 15px; length: 15px;" src="src/images/icon-down.svg" alt="up-icon"><b> 19%</b></p></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="container2">
+                <table style="width: 100%;">
+                    <tr>
+                        <th><p style="float: left; color: hsl(228, 34%, 66%);">Total Views</p></th>
+                        <th><p style="float: right"><img style="vertical-align: middle"
+                                                         src="src/images/icon-youtube.svg" alt="up-icon"></p></th>
+                    </tr>
+                    <tr>
+                        <td><h1 style="float: left; color: #fefefe;">1407</h1></td>
+                        <td><p style="float: right; color: hsl(356, 69%, 56%)"><img style="width: 15px; length: 15px;" src="src/images/icon-down.svg" alt="up-icon"><b> 12%</b></p></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+</body>
 </html>
