@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Roboto&display=swap');
+$bg: hsl(230, 17%, 14%);
+$white: hsl(0, 0%, 100%);
+$text: hsl(228, 34%, 66%);
+$toggleButton: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+$instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$cardBG: hsl(228, 28%, 20%);
+$up: hsl(163, 72%, 41%);
+$down: hsl(356, 69%, 56%);
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 124px 0px;
+    background-color: $bg;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: flex-start;
+    height: 264px;
+    width: auto;
+    margin: 0;
+    padding: 0% 10% 0% 10%;
+    border-bottom: 1px solid hsl(232, 19%, 15%);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: hsl(232, 19%, 15%);
+    font-family: Inter;
+    font-weight: 600;
+}
+
+#title h1 {
+    color: $white;
+    margin-top: 40px;
+    line-height: 0px;
+}
+
+#title p{
+    color: $text;
+}
+
+#toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: auto;
+    color: $text;
+}
+
+#toggle-button-container {
+    display: flex;
+    height: 22px;
+    width: 48px;
+    border: 4px solid transparent;
+    border-radius: 56px;
+    background-clip: padding-box;
+    padding: 2px;
+    background-image: $toggleButton;
+}
+
+#toggle-button-container::after {
+    border-image: $toggleButton;
+    border-image-slice: 1;
+    border: 1px solid $toggleButton;
+}
+
+.toggle-button {
+    cursor: pointer;
+    height: 100%;
+    width: 22px;
+    margin-left: 2px;
+    background-color: $bg;
+    border: 1px solid $bg;
+    border-radius: 60px;
+}
+
+.social-media-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 132px;
+    left: 10%;
+    right: 10%;
+}
+
+.social-media-box-fb {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 236px;
+    background-color: $cardBG;
+    border-top: 5px solid hsl(208, 92%, 53%);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.social-media-box-twitter {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 236px;
+    background-color: $cardBG;
+    border-top: 5px solid hsl(203, 89%, 53%);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.social-media-box-instagram {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 236px;
+    background-color: $cardBG;
+    border-top: 5px solid $instagram;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.social-media-box-yt {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 236px;
+    background-color: $cardBG;
+    border-top: 5px solid hsl(348, 97%, 39%);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.social-media-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Inter;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    color: hsl(208, 92%, 53%);
+}
+
+.user {
+    font-weight: 600;
+    color: $text;
+    margin: 0px 0px 0px 4px;
+}
+
+.followers {
+    font-size: 4vw;
+    color: $white;
+    margin: 10% 0% 0% 0%;
+    font-weight: 600;
+}
+
+.followers-title {
+    text-align: center;
+    letter-spacing: 6px;
+    margin-top: 0;
+    color: $white;
+    font-weight: 100;
+}
+
+.follower-changes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.follower-changes img {
+    height: 4px;
+    width: 8px;
+    margin-right: 4px;
+}
+
+.follower-changes .up {
+    color: $up;
+}
+
+.follower-changes .down {
+    color: $down;
+}
+
+#second-header-container {
+    margin-top: 164px;
+    padding: 0% 10% 0% 10%;
+    color: $white;
+    font-family: Inter;
+}
+
+.social-media-statistics-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#upper-statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0% 10% 0% 10%;
+}
+
+#lower-statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding: 0% 10% 0% 10%;
+}
+
+.overview-card {
+    display: flex;
+    flex-direction: column;
+    height: 116px;
+    width: 236px;
+    background-color: $cardBG;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: Inter;
+}
+
+.title-and-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data-and-changes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistics-title {
+    font-weight: 600;
+    color: $text;
+    margin-bottom: 0;
+}
+
+.statistics-data {
+    font-size: 36px;
+    font-weight: 600;
+    color: $white;
+}
+
+.statistics-changes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.statistics-changes img {
+    height: 4px;
+    width: 8px;
+    margin-right: 4px;
+}
+
+.statistics-changes .up {
+    color: $up;
+}
+
+.statistics-changes .down {
+    color: $down;
+}
