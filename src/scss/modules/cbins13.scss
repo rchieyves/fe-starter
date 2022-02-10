@@ -1,0 +1,13 @@
+$bg: hsl(230,17%,14%);
+$white: hsl(0,0%,100%);
+
+*{
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    margin:0px;
+}
+body{
+    background-color: $bg;
+    margin: 0px;
+}
