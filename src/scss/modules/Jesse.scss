@@ -32,6 +32,10 @@ Body{
     margin: 2.5%;
 }
 
+.card:hover{
+    filter: brightness(150%);
+}
+
 .card_big{
     border-top: solid;
 }
@@ -54,4 +58,10 @@ Body{
 
 .youtube{
     border-color: #C7042B;
+}
+
+#overview{
+    text-align: left;
+    margin-left: 12.5%;
+    padding: 0%;
 }
