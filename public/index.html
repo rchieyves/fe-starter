@@ -8,53 +8,202 @@
 
     <title>Social Media Dashboard (with Dark Mode)</title>
 
+    <link rel="stylesheet" href="src/fonts/fonts.css" />
     <link rel="stylesheet" href="./dist/css/styles.css" />
     <script type="text/javascript" src="./dist/js/scripts.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
-    Social Media Dashboard Total Followers: 23,004
+    <h1 class="header">Social Media Dashboard</h1>
+    <p class="total" id="totalfollowers">Total Followers: 23,004</p>
 
     <!-- TOGGLE -->
-    Dark Mode
+    <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+    </label>
+    <p class="buttonname">Dark Mode</p>
 
-    <!-- FACEBOOK -->
-    @nathanf 1987 Followers 12 Today
+   <div class="boxtop" id="upperlayer">
+        <!-- FACEBOOK -->
+        <div class="card">
+        <div class="facebookborder">
+        <p class="username">
+            <img class="logo" src="/design/images/icon-facebook.svg"/>
+            @nathanf
+        </p>
+        <p class="numbers">1987</p>
+        <p class="interactiontop">FOLLOWERS</p>
+        <p class="updates">
+            <img src="/design/images/icon-up.svg"/>
+            12 Today
+        </p>
+        </div>
+    </div>
 
     <!-- TWITTER -->
-    @nathanf 1044 Followers 99 Today
+    <div class="card">
+    <div class="twitterborder">
+    <p class="username">
+        <img src="/design/images/icon-twitter.svg"/>
+        @nathanf
+    </p>
+    <p class="numbers">1044</p>
+    <p class="interactiontop">FOLLOWERS</p>
+    <p class="updates">
+        <img class="logo" src="/design/images/icon-up.svg"/>
+        99 Today
+    </p>
+    </div>
+    </div>
 
     <!-- INSTAGRAM -->
-    @realnathanf 11k Followers 1099 Today
+    <div class="card">
+    <div class="instagramborder">
+    <p class="username">
+        <img class="logo" src="/design/images/icon-instagram.svg"/>
+        @realnathanf
+    </p>
+    <p class="numbers">11k</p>
+    <p class="interactiontop">FOLLOWERS</p>
+    <p class="updates">
+        <img class="logo" src="/design/images/icon-up.svg"/>
+        1099 Today
+    </p>
+    </div>
+    </div>
 
     <!-- YOUTUBE -->
-    Nathan F. 8239 Subscribers 144 Today
+    <div class="card">
+    <div class="youtubeborder">
+    <p class="username">
+        <img class="logo" src="/design/images/icon-youtube.svg">
+        Nathan F.
+    </p>
+    <p class="numbers">8239</p>
+    <p class="interactiontop">SUBSCRIBERS</p>
+    <p class="updates2">
+        <img class="logo" src="/design/images/icon-down.svg"/>
+        164 Today
+    </p>
+    </div>
+    </div>
+    </div>
 
-    <!-- OVERVIEW -->
-    Overview - Today
+    <!-- OVERVIEW - Today -->
+    <div class="boxbottomheader">
+        <h2>Overview - Today</h2>
+    </div> 
 
-    <!--  -->
-    Page Views 87 3%
+    <div class="boxbottom" id="lowerlayer">
+    <!-- Facebook Page Viewers -->
+    <div class="card2">
+    <p class="interaction">
+    Page Views
+    <img class="logo" src="/design/images/icon-facebook.svg"/>
+    </p>
+    <div class="a">
+    <p class="numbersbottom">87</p>
+    <p class="updates">
+            <img src="/design/images/icon-up.svg"/>
+            3%
+        </p>
+    </div>
+    </div>
 
-    <!--  -->
-    Likes 52 2%
+    <!-- Facebook Likes -->
+    <div class="card2">
+        <p class="interaction">
+        Page Views
+            <img class="logo" src="/design/images/icon-facebook.svg"/>
+        </p>
+        <p class="numbersbottom">52</p>
+        <p class="updates2">
+                <img src="/design/images/icon-down.svg"/>
+                2%
+            </p>
+     </div>
 
-    <!--  -->
-    Likes 5462 2257%
+    <!-- Instragram Likes -->
+    <div class="card2">
+        <p class="interaction">
+        Likes
+            <img class="logo" src="/design/images/icon-instagram.svg"/>
+        </p>
+        <p class="numbersbottom">54</p>
+        <p class="updates">
+                <img src="/design/images/icon-up.svg"/>
+                2257%
+            </p>
+     </div>
 
-    <!--  -->
-    Profile Views 52k 1375%
+    <!-- Instagram Profile Views -->
+    <div class="card2">
+        <p class="interaction">
+        Profile Views
+            <img class="logo" src="/design/images/icon-instagram.svg"/>
+        </p>
+        <p class="numbersbottom">52k</p>
+        <p class="updates">
+                <img src="/design/images/icon-up.svg"/>
+                1375%
+            </p>
+     </div>
+     <!-- </div> -->
 
-    <!--  -->
-    Retweets 117 303%
+    <!-- Twitter Retweets -->
+    <!-- <div class="boxbottom" id="lowerlayer"> -->
+    <div class="card2">
+        <p class="interaction">
+        Retweets
+            <img class="logo" src="/design/images/icon-twitter.svg"/>
+        </p>
+        <p class="numbersbottom">117</p>
+        <p class="updates">
+                <img src="/design/images/icon-up.svg"/>
+                303%
+            </p>
+     </div>
 
-    <!--  -->
-    Likes 507 553%
+    <!-- Twitter Likes -->
 
-    <!--  -->
-    Likes 107 19%
+    <div class="card2">
+        <p class="interaction">
+        Likes
+            <img class="logo" src="/design/images/icon-twitter.svg"/>
+        </p>
+        <p class="numbersbottom">507</p>
+        <p class="updates">
+                <img src="/design/images/icon-up.svg"/>
+                552%
+            </p>
+     </div>
 
-    <!--  -->
-    Total Views 1407 12%
+    <!-- Youtube Likes -->
+    <div class="card2">
+        <p class="interaction">
+        Likes
+            <img class="logo" src="/design/images/icon-youtube.svg"/>
+        </p>
+        <p class="numbersbottom">107</p>
+        <p class="updates2">
+                <img src="/design/images/icon-down.svg"/>
+                19%
+            </p>
+     </div>
+
+    <!-- Youtube Views -->
+    <div class="card2">
+        <p class="interaction">
+        Total Views
+            <img class="logo" src="/design/images/icon-youtube.svg"/>
+        </p>
+        <p class="numbersbottom">1407</p>
+        <p class="updates2">
+                <img src="/design/images/icon-down.svg"/>
+                12%
+            </p>
+     </div>
+    </div>
   </body>
 </html>

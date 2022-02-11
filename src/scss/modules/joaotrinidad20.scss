@@ -78,7 +78,7 @@ body {
     background-color: hsl(228, 28%, 20%);
     padding: auto;
     height: 200px;
-    width: 200px;
+    width: 18.5%;
     display: inline-block;
     overflow: auto;
     margin: 100px 8px 50px 8px;
@@ -101,12 +101,13 @@ body {
     background-color: hsl(228, 28%, 20%);
     padding: auto;
     height: 120px;
-    width: 200px;
+    width: 22.5%;
     display: inline-block;
     overflow: auto;
     margin: 10px 8px 0px 8px;
     text-align: center;
     border-radius: 5px;
+    min-width: 100px;
 }
 
 .numbersbottom {
@@ -114,13 +115,13 @@ body {
     font-weight: bold;
 }
 
-.updates {
+.updatesup {
     color:hsl(163, 72%, 41%);
     font-weight: bold;
     font-size: 10px;
 }
 
-.updates2 {
+.updatesdown {
     color:hsl(356, 69%, 56%);
     font-weight: bold;
     font-size: 10px;
@@ -135,8 +136,11 @@ body {
 
 .boxbottom {
     display: flex;
+    width: 80%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
  }
 
  /* The switch - the box around the slider */

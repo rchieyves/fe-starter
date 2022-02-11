@@ -10,6 +10,8 @@ server.use("/api/dashboard", function (req, res) {
   res.send(dashboardData).status(200).end();
 });
 
+server.use("/design/images", express.static("./src/images"));
+
 server.listen(PORT, function () {
   console.log(`Server is now listening on port ${PORT}`);
 });
