@@ -94,7 +94,10 @@ body {
     margin:80px 8px 30px 8px;
     text-align: center;
     justify-content: space-between;
-    border-top: 5px solid #df4996;
+    border-top: solid;
+    border-width: 2px;
+    border-image-source: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-image-slice: 1;
 }
 
 .social-med-card-twitter {
