@@ -1,7 +1,6 @@
 
 * {
   color: hsl(0, 0%, 100%);
-
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -11,8 +10,6 @@
 body {
   background-color:hsl(230, 17%, 14%);
   margin: 0px;
-  
-  
 }
 
 .box {
@@ -38,7 +35,6 @@ body {
 .container-full{
   width: 100%;
   margin: auto;
-  // display: inline-block;
   white-space: initial;
   align-items: center;
 }
@@ -59,7 +55,6 @@ h2{
   margin: 38px 0px 17px;
 }
 
-
 .font-dark, .username, .metrics{
   color: hsl(228, 12%, 44%);
 }
@@ -72,8 +67,6 @@ h2{
   position: relative;
   top: 0px;
   right: 0px;
-  
-  
 }
 
 .left{
@@ -92,7 +85,6 @@ h2{
 }
 
 #content {
-  // margin-top: 100px;
   margin: 0px 100px 0px;
   top: 100px;
 }
