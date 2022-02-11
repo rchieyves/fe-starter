@@ -1,9 +1,7 @@
-import module1 from "./modules/module-1";
-import module2 from "./modules/module-2";
-
-function init() {
-  module1();
-  module2();
-}
-
-init();
+// 1. Fetch Data
+fetch("/api/dashboard")
+  .then((response) => response.json())
+  .then((data) => {
+    // 2. Render the Data
+    console.log(data);
+  });
