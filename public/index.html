@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="src/images/favicon.png" />
     <title>Social Media Dashboard (with Dark Mode)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/fonts/fonts.css" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="src/fonts/fonts.css" /> -->
     <link rel="stylesheet" href="./dist/css/styles.css" />
     <script type="text/javascript" src="./dist/js/scripts.js" defer></script>
   </head>
@@ -43,14 +43,14 @@
         <div class="box" id="facebook_box">
           
           <p class="username">
-            <img class="logo" src="src/images/icon-facebook.svg" 
+            <img class="logo" src="/api/images/icon-facebook.svg" 
               alt="Facebook Icon" />
             @nathanf
           </p>
-          <p class="number">1987</p>
+          <p class="number" id="value" >1987</p>
           <p class="metrics">Followers</p>
           <p class="updates">
-            <img src="src/images/icon-up.svg" alt="up" />
+            <img src="/api/images/icon-up.svg" alt="up" />
             12 Today
           </p>
         </div>
@@ -60,14 +60,14 @@
         <!-- @nathanf 1044 Followers 99 Today -->
         <div class="box" id="twitter_box">
           <p class="username">
-            <img class="logo" src="src/images/icon-twitter.svg" 
+            <img class="logo" src="/api/images/icon-twitter.svg" 
               alt="Facebook Icon" />
             @nathanf
           </p>
           <p class="number">1044</p>
           <p class="metrics">Followers</p>
           <p class="updates">
-            <img src="src/images/icon-up.svg" alt="up" />
+            <img src="/api/images/icon-up.svg" alt="up" />
             99 Today
           </p>
         </div>
@@ -76,7 +76,7 @@
         <!-- @realnathanf 11k Followers 1099 Today -->
         <div class="box" id="instagram_box">
           <p class="username">
-            <img class="logo" src="src/images/icon-instagram.svg" 
+            <img class="logo" src="/api/images/icon-instagram.svg" 
               alt="Instagram Icon" />
             @realnathanf
           </p>
@@ -85,7 +85,7 @@
           <p class="metrics">Followers</p>
           <div class="update">
             <p class="updates">
-              <img src="src/images/icon-up.svg" alt="up" />
+              <img src="/api/images/icon-up.svg" alt="up" />
               1099 Today
             </p>
             </div>
@@ -96,7 +96,7 @@
 
         <div class="box" id="youtube_box">
           <p class="username">
-            <img class="logo" src="src/images/icon-youtube.svg" 
+            <img class="logo" src="/api/images/icon-youtube.svg" 
               alt="Youtube Icon" />
             Nathan F.
           </p>
@@ -104,7 +104,7 @@
           <p class="metrics">Subscribers</p>
           <div class="update">
             <p class="updates">
-              <img src="src/images/icon-up.svg" alt="up" />
+              <img src="/api/images/icon-up.svg" alt="up" />
               144 Today
             </p>
             </div>
@@ -119,13 +119,13 @@
       <div class="container-full center" id="lower-main-container">
         <div class="box">
           <h3 class="metrics">Page Views </h3>
-          <img class="logo" src="src/images/icon-facebook.svg" 
+          <img class="logo" src="/api/images/icon-facebook.svg" 
           alt="Facebook Icon" />
           <p class="number">87</p> 
 
           <div class="update">
             <p class="updates">
-              <img src="src/images/icon-up.svg" />
+              <img src="/api/images/icon-up.svg" />
               3%
             </p>
             </div>
@@ -133,13 +133,13 @@
 
         <div class="box" >
           <h3 class="metrics">Likes </h3>
-          <img class="logo" src="src/images/icon-facebook.svg" 
+          <img class="logo" src="/api/images/icon-facebook.svg" 
           alt="Facebook Icon" />
           <p class="number">52</p> 
           
           <div class="update">
             <p class="updates">
-              <img src="src/images/icon-up.svg" />
+              <img src="/api/images/icon-up.svg" />
               2%
             </p>
             </div>
@@ -147,13 +147,13 @@
 
         <div class="box">
           <h3 class="metrics">Likes </h3>
-          <img class="logo" src="src/images/icon-instagram.svg" 
+          <img class="logo" src="/api/images/icon-instagram.svg" 
           alt="Instagram Icon" />
           <p class="number">5462</p> 
           
           <div class="update">
             <p class="updates">
-              <img src="src/images/icon-up.svg" />
+              <img src="/api/images/icon-up.svg" />
               2257%
             </p>
             </div>
@@ -161,13 +161,13 @@
 
         <div class="box">
           <h3 class="metrics">Profile Views </h3>
-          <img class="logo" src="src/images/icon-instagram.svg" 
+          <img class="logo" src="/api/images/icon-instagram.svg" 
           alt="Instagram Icon" />
           <p class="number">52k</p> 
           
           <div class="update">
             <p class="updates">
-              <img src="src/images/icon-up.svg" />
+              <img src="/api/images/icon-up.svg" />
               1375%
             </p>
             </div>
@@ -175,13 +175,13 @@
 
         <div class="box">
           <h3 class="metrics">Retweets </h3>
-          <img class="logo" src="src/images/icon-twitter.svg" 
+          <img class="logo" src="/api/images/icon-twitter.svg" 
           alt="Facebook Icon" />
           <p class="number">117</p> 
           
           <div class="update">
             <p class="updates">
-              <img src="src/images/icon-up.svg" />
+              <img src="/api/images/icon-up.svg" />
               303%
             </p>
             </div>
@@ -189,38 +189,38 @@
         
         <div class="box">
           <h3 class="metrics">Likes </h3>
-          <img class="logo" src="src/images/icon-twitter.svg" 
+          <img class="logo" src="/api/images/icon-twitter.svg" 
           alt="Facebook Icon" />
           <p class="number">507</p> 
           
           <div class="update">
             <p class="updates">
-              <img src="src/images/icon-up.svg" />
+              <img src="/api/images/icon-up.svg" />
               553%
             </p>
             </div>
         </div>
         <div class="box">
           <h3 class="metrics">Likes </h3>
-          <img class="logo" src="src/images/icon-youtube.svg" 
+          <img class="logo" src="/api/images/icon-youtube.svg" 
           alt="Youtube Icon" />
           <p class="number">107</p> 
           <div class="update">
             <p class="updates">
-              <img src="src/images/icon-up.svg" />
+              <img src="/api/images/icon-up.svg" />
               19%
             </p>
             </div>
         </div>
         <div class="box">
           <h3 class="metrics">Total Views </h3>
-          <img class="logo" src="src/images/icon-youtube.svg" 
+          <img class="logo" src="/api/images/icon-youtube.svg" 
           alt="Youtube Icon" />
           <p class="number">1407</p> 
           
           <div class="update">
             <p class="updates">
-              <img src="src/images/icon-up.svg" />
+              <img src="/api/images/icon-up.svg" />
               12%
             </p>
             </div>
