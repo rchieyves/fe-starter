@@ -2,11 +2,11 @@
   "scripts": {
     "start": "npm run compile && npm run watch-css & npm run watch-js",
     "compile": "npm run compile-css & npm run compile-js",
-    "compile-css": "sass ./src/scss/styles.scss ./dist/css/styles.css",
-    "compile-css-prod": "sass ./src/scss/styles.scss ./dist/css/styles.css --no-source-map --style=compressed",
-    "watch-css": "sass --watch ./src/scss/styles.scss ./dist/css/styles.css",
-    "compile-js": "rollup ./src/js/scripts.js --file ./dist/js/scripts.js --format iife",
-    "watch-js": "rollup ./src/js/scripts.js --file ./dist/js/scripts.js --format iife --watch"
+    "compile-css": "sass ./public/src/scss/styles.scss ./public/dist/css/styles.css",
+    "compile-css-prod": "sass ./public/src/scss/styles.scss ./public/dist/css/styles.css --no-source-map --style=compressed",
+    "watch-css": "sass --watch ./public/src/scss/styles.scss ./public/dist/css/styles.css",
+    "compile-js": "rollup ./public/src/js/scripts.js --file ./public/dist/js/scripts.js --format iife",
+    "watch-js": "rollup ./public/src/js/scripts.js --file ./public/dist/js/scripts.js --format iife --watch"
   },
   "devDependencies": {
     "sass": "^1.47.0",
