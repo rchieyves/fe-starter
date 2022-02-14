@@ -12,5 +12,23 @@
     "express": "^4.17.2",
     "rollup": "^2.63.0",
     "sass": "^1.47.0"
-  }
+  },
+  "name": "fe-starter",
+  "description": "1. Create a new repository named `sass-<your-username>` (e.g. `sass-joshuacerbito`)\r 2. Add Josh and your supervisor as collaborators to the repo\r 3. Push all of the files in this directory to that new repo\r 4. Initialize a `package.json` file\r 5. Create your own npm scripts for compiling [Sass](https://sass-lang.com/) and create a PR for it\r 6. Create your own npm scripts for compiling JS using [Rollup](https://rollupjs.org/) and create a PR for it",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "server": "^1.0.37"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuacerbito/fe-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuacerbito/fe-starter/issues"
+  },
+  "homepage": "https://github.com/joshuacerbito/fe-starter#readme"
 }
