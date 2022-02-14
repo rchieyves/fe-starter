@@ -4,4 +4,5 @@ fetch("/api/dashboard")
   .then((data) => {
     // 2. Render the Data
     console.log(data);
+    
   });
