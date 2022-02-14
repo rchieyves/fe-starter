@@ -236,7 +236,7 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: hsl(230, 22%, 74%);
+  background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -254,7 +254,7 @@ h2 {
 }
 
 input:checked + .slider {
- background: linear-gradient(to right, hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
+  background-color: #B2F3AC;
 }
 
 input:focus + .slider {

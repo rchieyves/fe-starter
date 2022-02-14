@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="icon" type="image/png" href="src/images/favicon.png"/>
+
+    <title>Social Media Dashboard (with Dark Mode)</title>
+
+    <link rel="stylesheet" href="src/fonts/fonts.css"/>
+    <link rel="stylesheet" href="./dist/css/styles.css"/>
+    <script type="text/javascript" src="./dist/js/scripts.js"></script>
+</head>
+<body>
+<p id="result"></p>
+
+<!-- HEADER -->
+<br>
+<table class="header">
+    <tr>
+        <th>
+            <h1 class="title">Social Media Dashboard</h1>
+            <h3 class="darkMode">Dark Mode</h3>
+            <div class="switch_button">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </th>
+
+    </tr>
+    <tr>
+        <td><h2 class="followers" id="followers">Total Followers: 23,004</h2></td>
+    </tr>
+
+
+    <!-- TOGGLE -->
+
+</table>
+<br>
+
+<table class="top">
+    <tr>
+        <th>
+            <div class="facebook">
+                <br>
+                <br>
+                <div class="facebook-icon">
+                    <img id="facebookService" style="vertical-align:middle" src="" alt="facebook-icon">
+                    <span id="facebookUsername" class="creator"  style="vertical-align:middle"></span>
+                    <p id="facebookValue" class="topNumbers"></p>
+                    <p id="facebookLabel" class="fans"></p>
+                    <br>
+                    <div class="increase-decrease">
+                        <img id="facebookMetricIcon" style="vertical-align:middle" src="" alt="icon-up">
+                        <span id="facebookMetricValue" class="rate_green" style="vertical-align:middle"></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </th>
+        <th>
+            <div class="twitter">
+                <br>
+                <br>
+                <div class="twitter-icon">
+                    <img id="twitterService" style="vertical-align:middle" src="" alt="twitter-icon">
+                    <span id="twitterUsername" class="creator"  style="vertical-align:middle"></span>
+                    <p id="twitterValue" class="topNumbers"></p>
+                    <p id="twitterLabel" class="fans"></p>
+                    <br>
+                    <div class="increase-decrease">
+                        <img id="twitterMetricIcon" style="vertical-align:middle" src="" alt="icon-up">
+                        <span id="twitterMetricValue" class="rate_green" style="vertical-align:middle"></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </th>
+
+        <th>
+            <div class="instagram">
+                <br>
+                <br>
+                <div class="instagram-icon">
+                    <img id="instagramService" style="vertical-align:middle" src="" alt="instagram-icon">
+                    <span id="instagramUsername" class="creator"  style="vertical-align:middle"></span>
+                    <p id="instagramValue" class="topNumbers"></p>
+                    <p id="instagramLabel" class="fans"></p>
+                    <br>
+                    <div class="increase-decrease">
+                        <img id="instagramMetricIcon" style="vertical-align:middle" src="" alt="icon-up">
+                        <span id="instagramMetricValue" class="rate_green" style="vertical-align:middle"></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </th>
+        <th>
+            <div class="youtube">
+                <br>
+                <br>
+                <div class="youtube-icon">
+                    <img id="youtubeService" style="vertical-align:middle" src="" alt="youtube-icon">
+                    <span id="youtubeUsername" class="creator"  style="vertical-align:middle"></span>
+                    <p id="youtubeValue" class="topNumbers"></p>
+                    <p id="youtubeLabel" class="fans"></p>
+                    <br>
+                    <div class="increase-decrease">
+                        <img id="youtubeMetricIcon" style="vertical-align:middle" src="" alt="icon-up">
+                        <span id="youtubeMetricValue" class="rate_green" style="vertical-align:middle"></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <h1 class="overview">
+                Overview - Today
+            </h1>
+        </td>
+    </tr>
+
+</table>
+<table class="bottom">
+    <tr>
+        <th>
+            <div class="mini_interface">
+                <br>
+                <br>
+                <div class="overview_headers">
+                    <p class="interaction" id="facebookLabel0"></p>
+                    <img id ="facebookService0" src="" alt="facebook-icon" width="20" height="20">
+                </div>
+                <br>
+                <div class="overview_content">
+                    <p class="bottomNumbers" id ="facebookValue0"></p>
+                    <img id ="facebookMetricIcon0" src="" alt="icon-up" width="8" height="4">
+                    <span id ="facebookMetricPercent0" class="percentage_green"></span>
+                </div>
+
+            </div>
+        </th>
+        <th>
+            <div class="mini_interface">
+                <br>
+                <br>
+                <div class="overview_headers">
+                    <p class="interaction" id="facebookLabel1"></p>
+                    <img id ="facebookService1" src="" alt="facebook-icon" width="20" height="20">
+                </div>
+                <br>
+                <div class="overview_content">
+                    <p class="bottomNumbers" id ="facebookValue1"></p>
+                    <img id ="facebookMetricIcon1" src="" alt="icon-up" width="8" height="4">
+                    <span id ="facebookMetricPercent1" class="percentage_green"></span>
+                </div>
+
+            </div>
+        </th>
+        <th>
+            <div class="mini_interface">
+                <br>
+                <br>
+                <div class="overview_headers">
+                    <p class="interaction" id="instagramLabel2"></p>
+                    <img id ="instagramService2" src="" alt="instagram-icon" width="20" height="20">
+                </div>
+                <br>
+                <div class="overview_content">
+                    <p class="bottomNumbers" id ="instagramValue2"></p>
+                    <img id ="instagramMetricIcon2" src="" alt="icon-up" width="8" height="4">
+                    <span id ="instagramMetricPercent2" class="percentage_green"></span>
+                </div>
+
+            </div>
+        </th>
+        <th>
+            <div class="mini_interface">
+                <br>
+                <br>
+                <div class="overview_headers">
+                    <p class="interaction" id="instagramLabel3"></p>
+                    <img id ="instagramService3" src="" alt="instagram-icon" width="20" height="20">
+                </div>
+                <br>
+                <div class="overview_content">
+                    <p class="bottomNumbers" id ="instagramValue3"></p>
+                    <img id ="instagramMetricIcon3" src="" alt="icon-up" width="8" height="4">
+                    <span id ="instagramMetricPercent3" class="percentage_green"></span>
+                </div>
+
+            </div>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <div class="mini_interface">
+                <br>
+                <br>
+                <div class="overview_headers">
+                    <p class="interaction" id="twitterLabel4"></p>
+                    <img id ="twitterService4" src="" alt="twitter-icon" width="20" height="20">
+                </div>
+                <br>
+                <div class="overview_content">
+                    <p class="bottomNumbers" id ="twitterValue4"></p>
+                    <img id ="twitterMetricIcon4" src="" alt="icon-up" width="8" height="4">
+                    <span id ="twitterMetricPercent4" class="percentage_green"></span>
+                </div>
+
+            </div>
+        </th>
+        <th>
+            <div class="mini_interface">
+                <br>
+                <br>
+                <div class="overview_headers">
+                    <p class="interaction" id="twitterLabel5"></p>
+                    <img id ="twitterService5" src="" alt="twitter-icon" width="20" height="20">
+                </div>
+                <br>
+                <div class="overview_content">
+                    <p class="bottomNumbers" id ="twitterValue5"></p>
+                    <img id ="twitterMetricIcon5" src="" alt="icon-up" width="8" height="4">
+                    <span id ="twitterMetricPercent5" class="percentage_green"></span>
+                </div>
+
+            </div>
+        </th>
+        <th>
+            <div class="mini_interface">
+                <br>
+                <br>
+                <div class="overview_headers">
+                    <p class="interaction" id="youtubeLabel6"></p>
+                    <img id ="youtubeService6" src="" alt="twitter-icon" width="20" height="20">
+                </div>
+                <br>
+                <div class="overview_content">
+                    <p class="bottomNumbers" id ="youtubeValue6"></p>
+                    <img id ="youtubeMetricIcon6" src="" alt="icon-up" width="8" height="4">
+                    <span id ="youtubeMetricPercent6" class="percentage_green"></span>
+                </div>
+
+            </div>
+        </th>
+        <th>
+            <div class="mini_interface">
+                <br>
+                <br>
+                <div class="overview_headers">
+                    <p class="interaction" id="youtubeLabel7"></p>
+                    <img id ="youtubeService7" src="" alt="twitter-icon" width="20" height="20">
+                </div>
+                <br>
+                <div class="overview_content">
+                    <p class="bottomNumbers" id ="youtubeValue7"></p>
+                    <img id ="youtubeMetricIcon7" src="" alt="icon-up" width="8" height="4">
+                    <span id ="youtubeMetricPercent7" class="percentage_green"></span>
+                </div>
+
+            </div>
+        </th>
+    </tr>
+</table>
+
+
+</body>
+</html>
