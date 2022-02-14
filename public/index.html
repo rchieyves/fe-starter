@@ -21,8 +21,8 @@
       <div id="toggle">
         <!-- TOGGLE -->
         <p>Dark Mode</p>
-        <label id="toggle-button-container">
-          <input id="checkbox-input" type="checkbox">
+        <label id="toggle-button-container" class="label">
+          <input id="checkbox-input" type="checkbox" checked>
           <span class="slider"></span>
         </label>
       </div>
@@ -38,7 +38,7 @@
           <p id="currentFBFollowers" class="followers"></p>
           <p id="currentFBLabel" class="followers-title"></p>
           <div class="follower-changes">
-            <img src="./images/icon-up.svg" alt="Up Icon">
+            <img id="trendMainFB" src="" alt="Up Icon">
             <p id="metricValueFB" class="up"></p>
           </div>
         </div>
@@ -53,22 +53,22 @@
           <p id="currentTwitterFollowers" class="followers"></p>
           <p id="currentTwitterLabel" class="followers-title"></p>
           <div class="follower-changes">
-            <img src="./images/icon-up.svg" alt="Up Icon">
+            <img id="trendMainTwitter" src="" alt="Up Icon">
             <p id="metricValueTwitter" class="up"></p>
           </div>
         </div>
       </div>
       <div class="social-media-box-instagram"> 
         <!-- INSTAGRAM -->
-        <div class="social-media-box-content">
-          <div class="user-container">
+        <div class="social-media-box-content-ig">
+          <div class="user-container-ig">
             <img src="./images/icon-instagram.svg" alt="Facebook Icon" width="24px" height="24px">
             <p id="usernameIG" class="user"></p>
           </div>
           <p id="currentIGFollowers" class="followers"></p>
           <p id="currentIGLabel" class="followers-title"></p>
           <div class="follower-changes">
-            <img src="./images/icon-up.svg" alt="Up Icon">
+            <img id="trendMainIG" src="" alt="Up Icon">
             <p id="metricValueIG" class="up"></p>
           </div>
         </div>
@@ -83,7 +83,7 @@
           <p id="currentYTFollowers" class="followers"></p>
           <p id="currentYTLabel" class="followers-title"></p>
           <div class="follower-changes">
-            <img src="./images/icon-down.svg" alt="Down Icon">
+            <img id="trendMainYT" src="" alt="Down Icon">
             <p id="metricValueYT" class="down"></p>
           </div>
         </div>
@@ -106,7 +106,7 @@
           <div class="data-and-changes">
             <p id="pageViewsFBValue" class="statistics-data"></p>
             <div class="statistics-changes">
-              <img src="./images/icon-up.svg" alt="Up Icon">
+              <img id="trendPageViewsFB" src="" alt="Up Icon">
               <p id="pageViewsFBMetric" class="up"></p>
             </div>
           </div>
@@ -120,7 +120,7 @@
           <div class="data-and-changes">
             <p id="likesFBValue" class="statistics-data"></p>
             <div class="statistics-changes">
-              <img src="./images/icon-down.svg" alt="Down Icon">
+              <img id="trendLikesFB" src="" alt="Down Icon">
               <p id="likesFBMetric" class="down"></p>
             </div>
           </div>
@@ -134,7 +134,7 @@
           <div class="data-and-changes">
             <p id="likesIGValue" class="statistics-data"></p>
             <div class="statistics-changes">
-              <img src="./images/icon-up.svg" alt="Up Icon">
+              <img id="trendLikesIG" src="" alt="Up Icon">
               <p id="likesIGMetric" class="up"></p>
             </div>
           </div>
@@ -148,7 +148,7 @@
           <div class="data-and-changes">
             <p id="profileViewsIGValue" class="statistics-data"></p>
             <div class="statistics-changes">
-              <img src="./images/icon-up.svg" alt="Up Icon">
+              <img id="trendProfileViewsIG" src="" alt="Up Icon">
               <p id="profileViewsIGMetric" class="up"></p>
             </div>
           </div>
@@ -164,7 +164,7 @@
           <div class="data-and-changes">
             <p id="retweetsTwitterValue" class="statistics-data"></p>
             <div class="statistics-changes">
-              <img src="./images/icon-up.svg" alt="Up Icon">
+              <img id="trendRetweetsTwitter" src="" alt="Up Icon">
               <p id="retweetsTwitterMetric" class="up"></p>
             </div>
           </div>
@@ -178,7 +178,7 @@
           <div class="data-and-changes">
             <p id="likesTwitterValue" class="statistics-data"></p>
             <div class="statistics-changes">
-              <img src="./images/icon-up.svg" alt="Up Icon">
+              <img id="trendLikesTwitter" src="" alt="Up Icon">
               <p id="likesTwitterMetric" class="up"></p>
             </div>
           </div>
@@ -192,7 +192,7 @@
           <div class="data-and-changes">
             <p id="likesYTValue" class="statistics-data"></p>
             <div class="statistics-changes">
-              <img src="./images/icon-down.svg" alt="Down Icon">
+              <img id="trendLikesYT" src="" alt="Down Icon">
               <p id="likesYTMetric" class="down"></p>
             </div>
           </div>
@@ -206,7 +206,7 @@
           <div class="data-and-changes">
             <p id="totalViewsYTValue" class="statistics-data"></p>
             <div class="statistics-changes">
-              <img src="./images/icon-down.svg" alt="Down Icon">
+              <img id="trendTotalViewsYT" src="" alt="Down Icon">
               <p id="totalViewsYTMetric" class="down"></p>
             </div>
           </div>
