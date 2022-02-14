@@ -3,12 +3,12 @@ fetch("/api/dashboard")
   .then((response) => response.json())
   .then((data) => {
     
-    //Modifying Total Metrics
+    //Updating Total Metrics
     document.getElementById('totalfollowers').innerHTML = `
       Total ${data.primary_metrics.total.label}: ${data.primary_metrics.total.value}
     `;
 
-    //Modifying Contents of primary metrics
+    //Updating Contents of primary metrics
     document.getElementById('upperlayer').innerHTML = "";
     data.primary_metrics.cards.forEach(card => {
       document.getElementById('upperlayer').innerHTML += `
@@ -29,7 +29,7 @@ fetch("/api/dashboard")
       `;
     });
 
-    //Modifying contents of supporting metrics.
+    //Updating contents of supporting metrics.
     document.getElementById('lowerlayer').innerHTML = "";
     data.supporting_metrics.forEach(card => {
       document.getElementById('lowerlayer').innerHTML += `

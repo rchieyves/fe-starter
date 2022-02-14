@@ -13,25 +13,24 @@ body {
     color:hsl(0, 0%, 100%);
     font-family:Inter;
     font-size:14px;
-    //font-weight:400, 700;
 }
 
 .header {
     font-size:25px;
-    position: absolute;
-    left:300px;
+
 }
 
-.header2 {
-    font-size:18px;
-    font-weight: bold;
+ .total {
+     color: hsl(228, 34%, 66%);
+
 }
 
-.total {
-    position: absolute;
-    top: 50px;
-    left:300px;
-    color: hsl(228, 34%, 66%);
+.upperheader {
+    display: flex;
+    flex-direction: column;
+    left:180px;
+    margin-left: 11.5%;
+
 }
 
 .username {
@@ -50,8 +49,8 @@ body {
 
 .buttonname {
     position: absolute;
-    top: 48px;
-    right: 370px;
+    top: 35px;
+    right: 240px;
     color: hsl(228, 34%, 66%);
     font-size: 12px;
     font-weight: bold;
@@ -66,8 +65,10 @@ body {
 }
 
 .instagramborder {
-    border-top: 5px solid hsl(37, 97%, 70%);
-    //to hsl(329, 70%, 58%)
+    border-top: solid;
+    border-width: 5px;
+    border-image-source: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-image-slice: 1;
 }
 
 .youtubeborder {
@@ -81,7 +82,7 @@ body {
     width: 18.5%;
     display: inline-block;
     overflow: auto;
-    margin: 100px 8px 50px 8px;
+    margin: 10px 8px 25px 8px;
     text-align: center;
     border-radius: 5px;
 }
@@ -92,9 +93,13 @@ body {
 }
 
 .boxbottomheader {
-    position: absolute;
-    top: 320px;
-    left:300px;
+    //position: absolute;
+    padding-top: 10px;
+    //left:300px;
+    display: flex;
+    flex-direction: column;
+    left:180px;
+    margin-left: 11.5%;
  }
 
 .card2 {
@@ -147,8 +152,8 @@ body {
 .switch {
     color: hsl(163, 72%, 41%);
     position: absolute;
-    top: 50px;
-    right: 300px;
+    top: 35px;
+    right: 170px;
     //position: relative;
     //display: inline-block;
     width: 60px;
