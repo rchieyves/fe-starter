@@ -1,0 +1,202 @@
+.Jesse {
+    content: "4";
+}
+
+Body{
+    background-color: #1D2029;
+    color: white;
+    text-align: center;
+    font-family: "Inter";
+}
+
+#head{
+    display: inline-block;
+    width:31%;
+    margin-right: 0;
+    margin-left: 10%;
+    text-align: left;
+}
+
+#toggle{
+    display: inline-block;
+    width:31%;
+    margin-right: 10%;
+    margin-left: 12.5%;
+    text-align: right;
+}
+
+.card{
+    width:16%;
+    background-color: #252B43;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 2%;
+}
+
+.card:hover{
+    filter: brightness(150%);
+}
+
+.card_big{
+    border-top: solid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.card_small{
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.facebook{
+    border-color: #1892FA;
+}
+
+.twitter{
+    border-color: #1CA5F8;
+}
+
+.instagram{
+    border-top: solid;
+}
+
+.youtube{
+    border-color: #C7042B;
+}
+
+#overview{
+    text-align: left;
+    margin-left: 12.5%;
+    padding: 0%;
+    margin-bottom: 0px;
+}
+
+.left{
+    float: left;
+    margin-left: 20px;
+}
+
+.right{
+    float: right;
+    margin-right: 20px;
+}
+
+.no_padding{
+    padding: 0px;
+}
+
+.no_margin{
+    margin: 0px;
+}
+
+.header{
+    margin-top: 3%;
+}
+
+h1{
+    margin: 0px;
+    font-size: 40px;
+}
+
+/* Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-image: linear-gradient(to right, #4A8ABF, #4ACF95);
+-webkit-transition: 0.4s;
+transition: 0.4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 13px;
+width: 13px;
+left: 2px;
+bottom: 2px;
+background-color: #353956;
+-webkit-transition: 0.4s;
+transition: 0.4s;
+}
+
+input:checked + .slider {
+background-image: linear-gradient(to right, #4A8ABF, #4ACF95);
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(13px);
+-ms-transform: translateX(13px);
+transform: translateX(13px);
+}
+
+.slider.round {
+border-radius: 17px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+/*Fonts*/
+.grey {
+    color: #9097BB;
+}
+
+.small{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.sub{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+img{
+    width: 14px;
+    height: 14px;
+}
+
+.card_followers{
+    margin-top: 0%;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card_small_number{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.rating{
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.green{
+    color:green;
+}
+
+.red{
+    color:red;
+}
