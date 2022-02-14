@@ -26,11 +26,11 @@ Body{
 }
 
 .card{
-    width:16%;
+    width:17%;
     background-color: #252B43;
     border-radius: 4px;
     display: inline-block;
-    margin: 2%;
+    margin: 1.6%;
 }
 
 .card:hover{
@@ -94,11 +94,12 @@ Body{
 
 .header{
     margin-top: 3%;
+    font-size: 20px;
 }
 
 h1{
     margin: 0px;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 /* Switch */
@@ -161,12 +162,21 @@ border-radius: 50%;
 }
 
 .small{
-    font-size: 10px;
+    font-size: 8px;
     font-weight: bold;
+    display: inline-block;
+    line-height:12px;
+    vertical-align: middle;
+}
+
+.logo{
+    margin-right: 4px;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .sub{
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
 }
 
@@ -177,19 +187,19 @@ img{
 
 .card_followers{
     margin-top: 0%;
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .card_small_number{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .rating{
     font-weight: bold;
-    font-size: 11px;
+    font-size: 8px;
     margin-top: 10px;
 }
 
@@ -199,4 +209,11 @@ img{
 
 .red{
     color:#A6596D;
+}
+
+.trend_image{
+    width: 7px;
+    height: 5px;
+    margin-right: 2px;
+    margin-bottom: 1px;
 }
