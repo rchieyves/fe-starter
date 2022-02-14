@@ -13,18 +13,18 @@ fetch("/api/dashboard")
     data.primary_metrics.cards.forEach(card => {
       document.getElementById('upperlayer').innerHTML += `
         <div class="card">
-        <div class="${card.service}border">
-        <p class="username">
-            <img class="logo" src="/design/images/icon-${card.service}.svg"/>
-            @nathanf${card.username}
-        </p>
-        <p class="numbers">${card.value}</p>
-        <p class="interactiontop">${card.label}</p>
-        <p class="updates${card.metric.trend}">
-            <img src="/design/images/icon-${card.metric.trend}.svg"/>
-            ${card.metric.value}Today
-        </p>
-        </div>
+          <div class="${card.service}border">
+          <p class="username">
+              <img class="logo" src="/design/images/icon-${card.service}.svg"/>
+              @nathanf${card.username}
+          </p>
+          <p class="numbers">${card.value}</p>
+          <p class="interactiontop">${card.label}</p>
+          <p class="updates${card.metric.trend}">
+              <img src="/design/images/icon-${card.metric.trend}.svg"/>
+              ${card.metric.value}Today
+          </p>
+          </div>
         </div>
       `;
     });
@@ -33,20 +33,20 @@ fetch("/api/dashboard")
     document.getElementById('lowerlayer').innerHTML = "";
     data.supporting_metrics.forEach(card => {
       document.getElementById('lowerlayer').innerHTML += `
-      <div class="card2">
-    <p class="interaction">
-    ${card.label}
-    <img class="logo" src="/design/images/icon-${card.service}.svg"/>
-    </p>
-    <div class="a">
-    <p class="numbersbottom">${card.value}</p>
-    <p class="updates${card.metric.trend}">
-            <img src="/design/images/icon-${card.metric.trend}.svg"/>
-            ${card.metric.percent}%
+       <div class="card2">
+          <p class="interaction">
+        ${card.label}
+        <img class="logo" src="/design/images/icon-${card.service}.svg"/>
         </p>
-    </div>
-    </div>
-      
+        <div class="a">
+        <p class="numbersbottom">${card.value}</p>
+        <p class="updates${card.metric.trend}">
+                <img src="/design/images/icon-${card.metric.trend}.svg"/>
+                ${card.metric.percent}%
+            </p>
+        </div>
+       </div>
+
       `;
     });
   });
