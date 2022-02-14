@@ -1,4 +1,3 @@
-@import url(/src/fonts/fonts.css);
 body {
     background-color: #1e202a;
 }
@@ -10,17 +9,32 @@ body {
     font-weight:400, 700;
 }
 
+.soc-med-dashboard{
+  width: 70%;
+  margin: auto;
+}
+
+.soc-med-total-followers{
+  width: 70%;
+  margin: auto;
+}
+
+.Overview-today{
+  width: 70%;
+  margin: auto;
+}
+
 .dark-mode-button {
     color: #1db489;
     position: absolute;
     top: 50px;
-    right: 320px;
+    right: 530px;
     width: 60px;
     height: 34px;
   }
 .dark-mode{
   top: 40px;
-  right: 385px;
+  right: 600px;
   position: absolute;
 
 }
@@ -76,8 +90,13 @@ body {
     border-radius: 50%;
   }
   
+#upper-card-soc-med{
+  width: 70%;
+  margin: auto;
 
-.social-med-card-fb {
+}
+
+.social-med-card-facebook {
     background-color: hsl(228, 28%, 20%);
     padding: auto;
     height: 200px;
@@ -91,7 +110,7 @@ body {
     border-width: 2px;
 }
 
-.social-med-card-ig {
+.social-med-card-instagram {
     background-color: #252a41;
     padding: auto;
     height: 200px;
@@ -122,7 +141,7 @@ body {
 
 }
 
-.social-med-card-yt {
+.social-med-card-youtube {
     background-color: #252a41;
     padding: auto;
     height: 200px;
@@ -142,8 +161,9 @@ body {
     width: 250px;
     display: inline-block;
     overflow: auto;
-    margin: 1px 8px 1px 8px;
+    margin: 10px 8px 10px 8px;
     text-align: center;
+    margin-right:9.5px;
 }
 
 .topcards{
@@ -152,27 +172,21 @@ body {
     align-items: center;
 }
 
-.overview-topcards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    grid-column-gap: 5px;
-}
-
-.overview-bottomcards{
-  display: flex;
+.overview-cards{
+  display: block;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   grid-column-gap: 5px;
+  width: 70%;
+  margin: auto;
 }
 
-.positive-updates {
+.updates-up {
     color:#1db489;
 }
 
-.negative-updates {
+.updates-down {
     color:#dc414c;
 }
 .logo{
