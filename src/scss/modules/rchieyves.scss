@@ -40,57 +40,73 @@ header {
     width: 50%;
     margin: auto;
     justify-content: right;
+    align-items: center;
     display: flex;
     flex-direction: row;
 
-
-    label{
-
-    }
-
     p{
-      color: hsl(228, 34%, 66%);
-      padding-right: 10px;
+      padding-right: 0.5em;
     }
 
-    .switch{
+    .switch {
       position: relative;
-      display: block;
-      width: 40px;
-      height: 20px;
-      float: right;
+      display: inline-block;
+      width: 60px;
+      height: 31px;
     }
 
-    .slider{
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
       position: absolute;
       cursor: pointer;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(45deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+      background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+      -webkit-transition: .4s;
       transition: .4s;
     }
 
-    .switch input{
-      display: none;
-    }
-
-    .slider:before{
+    .slider:before {
       position: absolute;
       content: "";
+      height: 24px;
+      width: 24px;
+      left: 4px;
+      bottom: 4px;
+      background-color: hsl(230, 17%, 14%);
+      -webkit-transition: .4s;
       transition: .4s;
     }
 
-    .slider.round{
-      border-radius: 35px;
+    input:checked + .slider {
+      background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     }
 
-    .slider.round:before{
-      width: 30px;
-      height: 30px;
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
     }
 
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
   }
 }
 
