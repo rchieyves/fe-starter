@@ -21,251 +21,244 @@
         <p id="totalF"></p>
     </div>
 
-
     <div class="toggle">
-
         <p>Dark Mode</p>
-
-
         <label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
         </label>
-
-
-
     </div>
-
-
 </header>
 
 <div class="main">
-
     <div class="row">
-
         <div class="card" style="border-top: 5px solid hsl(208, 92%, 53%)">
-            <div class="container">
-<!--                <p style="color: hsl(228, 34%, 66%);"><img style="vertical-align: middle"-->
-<!--                                                           src="./src/images/icon-facebook.svg" alt="facebook"> @nathanf-->
-<!--                </p>-->
-                <p id="facebook-service"></p>
-                <p id="facebook-username"></p>
+            <div class="container" style="padding: 1em 0 1em 0">
+                <img id="facebook-image" style="vertical-align: middle"
+                     src="" alt="facebook-img">
+                <span id="facebook-username" style="vertical-align: middle; color:  hsl(228, 34%, 66%);"></span>
+                <br><br>
                 <h1 id="facebook-value"></h1>
                 <h4 id="facebook-label"></h4>
-                <p id="facebook-metricValue"><img style="width: 15px; length: 15px;" src="./src/images/icon-up.svg" alt="up-icon"><b></b>
-                </p>
+                <img id="facebook-trend-img" style="width: 15px; length: 15px;" src="" alt="up-icon">
+                <span id="facebook-metricValue" style="color: hsl(163, 72%, 41%)">
+                </span>
             </div>
         </div>
 
         <div class="card" style="border-top: 5px solid hsl(203, 89%, 53%)">
-            <div class="container">
-<!--                <p style="color: hsl(228, 34%, 66%);"><img style="vertical-align: middle"-->
-<!--                                                           src="./src/images/icon-twitter.svg" alt="twitter"> @nathanf-->
-<!--                </p>-->
-                <p id="twitter-service"></p>
-                <p id="twitter-username"></p>
+            <div class="container" style="padding: 1em 0 1em 0">
+                <img id="twitter-image" style="vertical-align: middle"
+                     src="" alt="twitter-img">
+                <span id="twitter-username" style="vertical-align: middle; color:  hsl(228, 34%, 66%);"></span>
+                <br><br>
                 <h1 id="twitter-value"></h1>
                 <h4 id="twitter-label"></h4>
-                <p id="twitter-metricValue"><img style="width: 15px; length: 15px;" src="./src/images/icon-up.svg" alt="up-icon"><b></b>
-                </p>
+                <img id="twitter-trend-img" style="width: 15px; length: 15px;" src="" alt="up-icon">
+                <span id="twitter-metricValue" style="color: hsl(163, 72%, 41%)">
+                </span>
             </div>
         </div>
 
         <div class="card" style="border-top: 5px solid hsl(37, 97%, 70%)">
-            <div class="container">
-<!--                <p style="color: hsl(228, 34%, 66%);"><img style="vertical-align: middle"-->
-<!--                                                           src="./src/images/icon-instagram.svg" alt="instagram">-->
-<!--                    @realnathanf-->
-<!--                </p>-->
-                <p id="instagram-service"></p>
-                <p id="instagram-username"></p>
+            <div class="container" style="padding: 1em 0 1em 0">
+                <img id="instagram-image" style="vertical-align: middle"
+                     src="" alt="instagram-img">
+                <span id="instagram-username" style="vertical-align: middle; color:  hsl(228, 34%, 66%);"></span>
+                <br><br>
                 <h1 id="instagram-value"></h1>
                 <h4 id="instagram-label"></h4>
-                <p id="instagram-metricValue"><img style="width: 15px; length: 15px;" src="./src/images/icon-up.svg" alt="up-icon"><b></b>
-                </p>
+                <img id="instagram-trend-img" style="width: 15px; length: 15px;" src="" alt="up-icon">
+                <span id="instagram-metricValue" style="color: hsl(163, 72%, 41%)">
+                </span>
             </div>
         </div>
 
         <div class="card" style="border-top: 5px solid hsl(348, 97%, 39%)">
-            <div class="container">
-<!--                <p style="color: hsl(228, 34%, 66%);"><img style="vertical-align: middle"-->
-<!--                                                           src="./src/images/icon-youtube.svg" alt="youtube"> Nathan F.-->
-<!--                </p>-->
-                <p id="youtube-service"></p>
-                <p id="youtube-username"></p>
+            <div class="container" style="padding: 1em 0 1em 0">
+                <img id="youtube-image" style="vertical-align: middle"
+                     src="" alt="youtube-img">
+                <span id="youtube-username" style="vertical-align: middle; color:  hsl(228, 34%, 66%);"></span>
+                <br><br>
                 <h1 id="youtube-value"></h1>
                 <h4 id="youtube-label"></h4>
-                <p id="youtube-metricValue" style="color: hsl(356, 69%, 56%)"><img style="width: 15px; length: 15px;" src="./src/images/icon-up.svg" alt="up-icon"><b></b>
-                </p>
+                <img id="youtube-trend-img" style="width: 15px; length: 15px;" src="" alt="down-icon">
+                <span id="youtube-metricValue" style="color: hsl(356, 69%, 56%)">
+                </span>
             </div>
         </div>
-
-
     </div>
-
 
     <div class="overviewToday">
         <h1>Overview - Today</h1>
     </div>
 
     <div class="row">
-
         <div class="card">
             <div class="container2">
                 <table style="width: 100%;">
                     <tr>
                         <th><p id="facebook0-label" style="float: left; color: hsl(228, 34%, 66%);"></p></th>
-                        <th><p id="facebook0-service" style="float: right"><img style="vertical-align: middle"
-                                                         src="./src/images/icon-facebook.svg" alt="facebook"></p></th>
+                        <th><img id="facebook0-service" style="vertical-align: middle; float: right"
+                                 src="" alt="facebook"></th>
                     </tr>
                     <tr>
                         <td><h1 id="facebook0-value" style="float: left; color: #fefefe;"></h1></td>
-                        <td><p id="facebook0-percent" style="float: right; color: hsl(163, 72%, 41%)"><img style="width: 15px; length: 15px;"
-                                                                                    src="./src/images/icon-up.svg"
-                                                                                    alt="up-icon"></p></td>
+                        <td><p style="float: right"><img id="facebook0-trend-img" style="width: 15px; length: 15px;"
+                                                         src=""
+                                                         alt="up-icon"><span id="facebook0-percent"
+                                                                             style="color: hsl(163, 72%, 41%)"></span>
+                        </p></td>
                     </tr>
                 </table>
-
             </div>
         </div>
+
         <div class="card">
             <div class="container2">
                 <table style="width: 100%;">
                     <tr>
                         <th><p id="facebook1-label" style="float: left; color: hsl(228, 34%, 66%);"></p></th>
-                        <th><p id="facebook1-service" style="float: right"><img style="vertical-align: middle"
-                                                         src="./src/images/icon-facebook.svg" alt="facebook"></p></th>
+                        <th><img id="facebook1-service" style="vertical-align: middle; float: right"
+                                 src="" alt="facebook"></th>
                     </tr>
                     <tr>
                         <td><h1 id="facebook1-value" style="float: left; color: #fefefe;"></h1></td>
-                        <td><p id="facebook1-percent" style="float: right; color: hsl(356, 69%, 56%)"><img style="width: 15px; length: 15px;"
-                                                                                    src="./src/images/icon-down.svg"
-                                                                                    alt="up-icon"></p></td>
+                        <td><p style="float: right"><img id="facebook1-trend-img" style="width: 15px; length: 15px;"
+                                                         src=""
+                                                         alt="up-icon"><span id="facebook1-percent"
+                                                                             style="color: hsl(356, 69%, 56%)"></span>
+                        </p></td>
                     </tr>
                 </table>
-
             </div>
         </div>
+
         <div class="card">
             <div class="container2">
                 <table style="width: 100%;">
                     <tr>
                         <th><p id="instagram2-label" style="float: left; color: hsl(228, 34%, 66%);"></p></th>
-                        <th><p id="instagram2-service" style="float: right"><img style="vertical-align: middle"
-                                                         src="./src/images/icon-instagram.svg" alt="instagram"></p></th>
+                        <th><img id="instagram2-service" style="vertical-align: middle; float: right"
+                                 src="" alt="instagram"></th>
                     </tr>
                     <tr>
                         <td><h1 id="instagram2-value" style="float: left; color: #fefefe;"></h1></td>
-                        <td><p id="instagram2-percent" style="float: right; color: hsl(163, 72%, 41%)"><img style="width: 15px; length: 15px;"
-                                                                                    src="./src/images/icon-up.svg"
-                                                                                    alt="up-icon"></p></td>
+                        <td><p style="float: right"><img id="instagram2-trend-img" style="width: 15px; length: 15px;"
+                                                         src=""
+                                                         alt="up-icon"><span id="instagram2-percent"
+                                                                             style="color: hsl(163, 72%, 41%)"></span>
+                        </p></td>
                     </tr>
                 </table>
-
             </div>
         </div>
+
         <div class="card">
             <div class="container2">
                 <table style="width: 100%;">
                     <tr>
                         <th><p id="instagram3-label" style="float: left; color: hsl(228, 34%, 66%);"></p></th>
-                        <th><p id="instagram3-service" style="float: right"><img style="vertical-align: middle"
-                                                         src="./src/images/icon-instagram.svg" alt="instagram"></p></th>
+                        <th><img id="instagram3-service" style="vertical-align: middle; float: right"
+                                 src="" alt="instagram"></th>
                     </tr>
                     <tr>
                         <td><h1 id="instagram3-value" style="float: left; color: #fefefe;"></h1></td>
-                        <td><p id="instagram3-percent" style="float: right; color: hsl(163, 72%, 41%)"><img style="width: 15px; length: 15px;"
-                                                                                    src="./src/images/icon-up.svg"
-                                                                                    alt="up-icon"></p></td>
+                        <td><p style="float: right"><img id="instagram3-trend-img" style="width: 15px; length: 15px;"
+                                                         src=""
+                                                         alt="up-icon"><span id="instagram3-percent"
+                                                                             style="color: hsl(163, 72%, 41%)"></span>
+                        </p></td>
                     </tr>
                 </table>
-
             </div>
         </div>
-
-
     </div>
 
     <br>
     <br>
-    <div class="row">
 
+    <div class="row">
         <div class="card">
             <div class="container2">
                 <table style="width: 100%;">
                     <tr>
                         <th><p id="twitter4-label" style="float: left; color: hsl(228, 34%, 66%);"></p></th>
-                        <th><p id="twitter4-service" style="float: right"><img style="vertical-align: middle"
-                                                         src="./src/images/icon-twitter.svg" alt="up-twitter"></p></th>
+                        <th><img id="twitter4-service" style="vertical-align: middle; float: right"
+                                 src="" alt="up-twitter"></p></th>
                     </tr>
                     <tr>
                         <td><h1 id="twitter4-value" style="float: left; color: #fefefe;"></h1></td>
-                        <td><p id="twitter4-percent" style="float: right; color: hsl(163, 72%, 41%)"><img style="width: 15px; length: 15px;"
-                                                                                    src="./src/images/icon-up.svg"
-                                                                                    alt="up-icon"></p></td>
+                        <td><p style="float: right"><img id="twitter4-trend-img" style="width: 15px; length: 15px;"
+                                                         src=""
+                                                         alt="up-icon"><span id="twitter4-percent"
+                                                                             style="color: hsl(163, 72%, 41%)"></span>
+                        </p></td>
                     </tr>
                 </table>
-
             </div>
         </div>
+
         <div class="card">
             <div class="container2">
                 <table style="width: 100%;">
                     <tr>
                         <th><p id="twitter5-label" style="float: left; color: hsl(228, 34%, 66%);"></p></th>
-                        <th><p id="twitter5-service" style="float: right"><img style="vertical-align: middle"
-                                                         src="./src/images/icon-twitter.svg" alt="twitter"></p></th>
+                        <th><img id="twitter5-service" style="vertical-align: middle; float: right"
+                                 src="" alt="twitter"></p></th>
                     </tr>
                     <tr>
                         <td><h1 id="twitter5-value" style="float: left; color: #fefefe;"></h1></td>
-                        <td><p id="twitter5-percent" style="float: right; color: hsl(163, 72%, 41%)"><img style="width: 15px; length: 15px;"
-                                                                                    src="./src/images/icon-up.svg"
-                                                                                    alt="up-icon"></p></td>
+                        <td><p style="float: right"><img id="twitter5-trend-img" style="width: 15px; length: 15px;"
+                                                         src=""
+                                                         alt="up-icon"><span id="twitter5-percent"
+                                                                             style="color: hsl(163, 72%, 41%)"></span>
+                        </p></td>
                     </tr>
                 </table>
-
             </div>
         </div>
+
         <div class="card">
             <div class="container2">
                 <table style="width: 100%;">
                     <tr>
                         <th><p id="youtube6-label" style="float: left; color: hsl(228, 34%, 66%);"></p></th>
-                        <th><p id="youtube6-service" style="float: right"><img style="vertical-align: middle"
-                                                         src="./src/images/icon-youtube.svg" alt="youtube"></p></th>
+                        <th><img id="youtube6-service" style="vertical-align: middle; float: right"
+                                 src="" alt="youtube"></p></th>
                     </tr>
                     <tr>
                         <td><h1 id="youtube6-value" style="float: left; color: #fefefe;"></h1></td>
-                        <td><p id="youtube6-percent" style="float: right; color: hsl(356, 69%, 56%)"><img style="width: 15px; length: 15px;"
-                                                                                    src="./src/images/icon-down.svg"
-                                                                                    alt="up-icon"></p></td>
+                        <td><p style="float: right"><img id="youtube6-trend-img" style="width: 15px; length: 15px;"
+                                                         src=""
+                                                         alt="up-icon"><span id="youtube6-percent"
+                                                                             style="color: hsl(356, 69%, 56%)"></span>
+                        </p></td>
                     </tr>
                 </table>
-
             </div>
         </div>
+
         <div class="card">
             <div class="container2">
                 <table style="width: 100%;">
                     <tr>
                         <th><p id="youtube7-label" style="float: left; color: hsl(228, 34%, 66%);"></p></th>
-                        <th><p id="youtube7-service" style="float: right"><img style="vertical-align: middle"
-                                                         src="./src/images/icon-youtube.svg" alt="youtube"></p></th>
+                        <th><img id="youtube7-service" style="vertical-align: middle; float: right"
+                                 src="" alt="youtube"></p></th>
                     </tr>
                     <tr>
                         <td><h1 id="youtube7-value" style="float: left; color: #fefefe;"></h1></td>
-                        <td><p id="youtube7-percent" style="float: right; color: hsl(356, 69%, 56%)"><img style="width: 15px; length: 15px;"
-                                                                                    src="./src/images/icon-down.svg"
-                                                                                    alt="up-icon"></p></td>
+                        <td><p style="float: right"><img id="youtube7-trend-img" style="width: 15px; length: 15px;"
+                                                         src=""
+                                                         alt="up-icon"><span id="youtube7-percent"
+                                                                             style="color: hsl(356, 69%, 56%)"></span>
+                        </p></td>
                     </tr>
                 </table>
-
             </div>
         </div>
-
-
     </div>
-
 </div>
 </body>
 </html>
