@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="icon" type="image/png" href="../src/images/favicon.png" />
 
-    <title>Social Media Dashboard (with Dark Mode)</title>
+    <title>Tristan Jara Social Media Dashboard (with Dark Mode)</title>
 
     <link rel="stylesheet" href="./src/fonts/fonts.css" />
     <link rel="stylesheet" href="./dist/css/styles.css" />
@@ -26,13 +26,13 @@
       
       <div class="header-left">
         <h1 class="header1">Social Media Dashboard</h1>
-        <h1 class="header2">Total Followers: 23,004</h1>
+        <h1 class="header2" id="header2"></h1>
       </div>
 
       <!-- TOGGLE -->
       <div class="header-right">
         <h2 class>Dark Mode</h2>
-        <label class="button-switch">
+        <label class="button-switch" id="button-toggle">
           <input type="checkbox">
           <span class="switch-slider rounded"></span>
         </label>
@@ -41,54 +41,8 @@
     </div>
 
 
-    <div class="upper-cards-container">
+    <div class="upper-cards-container", id="upper-cards-container">
       
-      <!-- FACEBOOK -->
-      <div class="card-container card1">
-        <div class = card-header>
-          <img src="./src/images/icon-facebook.svg">
-          <h2 class="card-heading"> @nathanf</h2> 
-        </div>
-
-        <h2 class="total-followers"> 1987</h2>
-        <h2 class="follower-label"> Followers</h2>
-        <h2 class="daily-total">12 Today </h2>
-      </div>
-
-      <!-- TWITTER -->
-      <div class="card-container card2">
-        <div class = card-header>
-          <img src="./src/images/icon-twitter.svg">
-          <h2 class="card-heading"> @nathanf</h2> 
-        </div>
-         <h2 class="total-followers">1044</h2>
-         <h2 class="follower-label">Followers</h2>
-         <h2 class="daily-total">99 Today</h2>   
-      </div>
-      
-
-      <!-- INSTAGRAM -->
-      <div class="card-container card3">
-        <div class = card-header>
-          <img src="./src/images/icon-instagram.svg">
-          <h2 class="card-heading"> @realnathanf</h2> 
-        </div>
-        <h2 class="total-followers">11k</h2>
-        <h2 class="follower-label">Followers</h2>
-        <h2 class="daily-total">1099 Today</h2>
-      </div>
-
-      <!-- YOUTUBE -->
-      <div class="card-container card4">
-        <div class = card-header>
-          <img src="./src/images/icon-youtube.svg"> 
-          <h2 class="card-heading"> Nathan F.</h2> 
-        </div>
-        <h2 class="total-followers">8239</h2>
-        <h2 class="follower-label">Subscribers</h2>
-        <h2 class="daily-total-down">144 Today</h2>
-      </div>
-    
     </div>
       
 
@@ -98,104 +52,8 @@
       <h1> Overview - Today </h1>
     </div>
 
-    <div class="lower-cards-container">
-      
-      <div class="lower-card-container card1">
-        <!--  -->
-        <div class="card-upper">
-          <h2 class="upper-card-heading">Page Views</h2>
-          <img src="./src/images/icon-facebook.svg">
-        </div>
-        <div class="card-lower">
-          <h2 class="lower-card-heading number">87 </h2>
-          <h2 class="lower-card-heading percentage">3%</h2>
-        </div> 
-        
-      </div>
-
-      <div class="lower-card-container card2">
-        <div class="card-upper">
-          <h2 class="upper-card-heading">Likes</h2>
-          <img src="./src/images/icon-facebook.svg">
-        </div>
-        <div class="card-lower">
-          <h2 class="lower-card-heading number">52 </h2>
-          <h2 class="lower-card-heading percentage negative">2%</h2>
-        </div> 
-      </div>
-
-      <div class="lower-card-container card3">
-        <div class="card-upper">
-          <h2 class="upper-card-heading">Likes</h2>
-          <img src="./src/images/icon-instagram.svg">
-        </div>
-        <div class="card-lower">
-          <h2 class="lower-card-heading number">5462 </h2>
-          <h2 class="lower-card-heading percentage">2257%</h2>
-        </div> 
-      </div>
-      
-      <div class="lower-card-container card4">
-        <!--  -->
-        <div class="card-upper">
-          <h2 class="upper-card-heading">Profile Views</h2>
-          <img src="./src/images/icon-instagram.svg">
-        </div>
-        <div class="card-lower">
-          <h2 class="lower-card-heading number">52k </h2>
-          <h2 class="lower-card-heading percentage">1375%</h2>
-        </div> 
-      </div>
-      
-      <div class="lower-card-container card5">
-        <!--  -->
-        <div class="card-upper">
-          <h2 class="upper-card-heading ">Retweets</h2>
-          <img src="./src/images/icon-twitter.svg">
-        </div>
-        <div class="card-lower">
-          <h2 class="lower-card-heading number">117 </h2>
-          <h2 class="lower-card-heading percentage">303%</h2>
-        </div> 
-      </div>
-      
-      <div class="lower-card-container card6">
-        <!--  -->
-        <div class="card-upper">
-          <h2 class="upper-card-heading">Likes</h2>
-          <img src="./src/images/icon-twitter.svg">
-        </div>
-        <div class="card-lower">
-          <h2 class="lower-card-heading number">507</h2>
-          <h2 class="lower-card-heading percentage">553%</h2>
-        </div> 
-      </div>
-      
-      <div class="lower-card-container card7">
-        <!--  -->
-        <div class="card-upper">
-          <h2 class="upper-card-heading">Likes</h2>
-          <img src="./src/images/icon-youtube.svg">
-        </div>
-        <div class="card-lower">
-          <h2 class="lower-card-heading number">107 </h2>
-          <h2 class="lower-card-heading percentage negative">19%</h2>
-        </div> 
-      </div>
-      
-      <div class="lower-card-container card8">
-        <!--  -->
-        <div class="card-upper">
-          <h2 class="upper-card-heading">Likes</h2>
-          <img src="./src/images/icon-youtube.svg">
-        </div>
-        <div class="card-lower">
-          <h2 class="lower-card-heading number">1407</h2>
-          <h2 class="lower-card-heading percentage negative">12%</h2>
-        </div> 
-      </div>
-
-  </div>
+    <div class="lower-cards-container" id="lower-cards-container">
+    </div>
 
   </body>
 </html>
