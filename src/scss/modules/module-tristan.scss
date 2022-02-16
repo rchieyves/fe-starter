@@ -160,14 +160,12 @@ body {
 
 
 .upper-cards-container .card-container .daily-total {
-  color: green;
   font-size: 15px;
   padding-top: 20px;
  
 }
 
 .upper-cards-container .card-container .daily-total-down {
-  color: red;
   font-size: 15px;
   padding-top: 20px;
 }
@@ -222,11 +220,12 @@ body {
   font-size: 25px;
 }
 
-.lower-cards-container .lower-card-container .card-lower .percentage {
-  color: green;
+.trend-up {
+  color:#3FB09B;
   font-size: 14px;
 }
 
-.lower-cards-container .lower-card-container .card-lower .negative {
-  color: red;
+.trend-down {
+  color:#A6596D;
+  font-size: 14px;
 }
