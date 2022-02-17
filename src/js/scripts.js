@@ -1,3 +1,5 @@
+console.log(1);
+
 // 1. Fetch Data
 fetch("/api/dashboard")
   .then((response) => response.json())
@@ -5,3 +7,5 @@ fetch("/api/dashboard")
     // 2. Render the Data
     console.log(data);
   });
+
+console.log(2);
