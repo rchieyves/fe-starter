@@ -7,6 +7,11 @@
 //   });
 
 //current
+//test1
+// C:/Users/user/Development/fe-starter/src/js/scripts.js
+// npm run watch-js
+// Do not edit scripts.js in public dist folder. only in the js file in the root folder.
+// test 1
 
 async function init() {
 
@@ -40,7 +45,6 @@ async function init() {
 function renderPrimaryCard(card) {
     const { service, username, value, label, metric} = card;
     const { trend, value: trendValue } = metric;
-
 
     return `
     <article class="card service-${service}">

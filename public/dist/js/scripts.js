@@ -1,48 +1,55 @@
-//  1. Fetch Data
-// fetch("/api/dashboard")
-//   .then((response) => response.json())
-//   .then((data) => {
-//       console.log(data)
-//      2. Render the Data
-//   });
+(function () {
+  'use strict';
 
-//current
+  //  1. Fetch Data
+  // fetch("/api/dashboard")
+  //   .then((response) => response.json())
+  //   .then((data) => {
+  //       console.log(data)
+  //      2. Render the Data
+  //   });
 
-async function init() {
+  //current
+  //test1
+  // C:/Users/user/Development/fe-starter/src/js/scripts.js
+  // npm run watch-js
+  // Do not edit scripts.js in public dist folder. only in the js file in the root folder.
+  // test 1
 
-    const $content = document.querySelector('.content');
-    const $total = $content.querySelector('.total');
-    const $primaryCards = $content.querySelector('.primary-cards');
-    const $supportingCards = $content.querySelector('.supporting-cards');
+  async function init() {
 
-    const response = await fetch("/api/dashboard");
-    const data = await response.json();
+      const $content = document.querySelector('.content');
+      const $total = $content.querySelector('.total');
+      const $primaryCards = $content.querySelector('.primary-cards');
+      const $supportingCards = $content.querySelector('.supporting-cards');
 
-    console.log(data);
+      const response = await fetch("/api/dashboard");
+      const data = await response.json();
 
-    const { primary_metrics, supporting_metrics: supportingCards } = data;
-    const { total, cards: primaryCards } = primary_metrics;
+      console.log(data);
 
-    // 1. render the total header text
-    $total.textContent = `Total ${total.label}: ${total.value}`;
+      const { primary_metrics, supporting_metrics: supportingCards } = data;
+      const { total, cards: primaryCards } = primary_metrics;
 
-    // 2. render the primary cards
-    primaryCards.forEach(card => {
-        $primaryCards.innerHTML += renderPrimaryCard(card);
-    })
+      // 1. render the total header text
+      $total.textContent = `Total ${total.label}: ${total.value}`;
 
-    // 3. render the supporting cards
-    supportingCards.forEach(card => {
-        $supportingCards.innerHTML += renderSupportingCard(card);
-    })
-}
+      // 2. render the primary cards
+      primaryCards.forEach(card => {
+          $primaryCards.innerHTML += renderPrimaryCard(card);
+      });
 
-function renderPrimaryCard(card) {
-    const { service, username, value, label, metric} = card;
-    const { trend, value: trendValue } = metric;
+      // 3. render the supporting cards
+      supportingCards.forEach(card => {
+          $supportingCards.innerHTML += renderSupportingCard(card);
+      });
+  }
 
+  function renderPrimaryCard(card) {
+      const { service, username, value, label, metric} = card;
+      const { trend, value: trendValue } = metric;
 
-    return `
+      return `
     <article class="card service-${service}">
       <div class="card-user">
         <img src="./src/images/icon-${service}.svg" alt="${service}">
@@ -60,13 +67,13 @@ function renderPrimaryCard(card) {
       </div>
     </article>
   `;
-}
+  }
 
-function renderSupportingCard(card){
-    const { service, value, label, metric} = card;
-    const { trend, percent} = metric;
+  function renderSupportingCard(card){
+      const { service, value, label, metric} = card;
+      const { trend, percent} = metric;
 
-    return `
+      return `
     <article class="card service-${service}">
       <div class="card-info">
         <p class ="card-value">${label}</p>
@@ -82,6 +89,8 @@ function renderSupportingCard(card){
       </div>
     </article>
   `;
-}
+  }
 
-init();
+  init();
+
+})();
