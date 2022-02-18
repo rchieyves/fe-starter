@@ -32,7 +32,7 @@
       const { total, cards: primaryCards } = primary_metrics;
 
       // 1. render the total header text
-      $total.textContent = `Total ${total.label}: ${total.value}`;
+      $total.textContent = `Total ${total.label}: ${total.value.toLocaleString()}`;
 
       // 2. render the primary cards
       primaryCards.forEach(card => {
@@ -53,7 +53,7 @@
     <article class="card service-${service}">
       <div class="card-user">
         <img src="./src/images/icon-${service}.svg" alt="${service}">
-        ${username ? `<p>@${username}</p>` : ''}
+        ${username ? `<b>@${username}</b>` : ''}
       </div>
 
       <div class="card-main">
@@ -63,7 +63,7 @@
 
       <div class="card-metric is-${trend}">
         <img src="./src/images/icon-${trend}.svg" alt="${trend}">
-        ${trend == "up" ? `<p class ="trend-up">${trendValue} Today</p>`: `<p class="trend-down">${trendValue} Today</p>`} 
+        ${trend == "up" ? `<b class ="trend-up">${trendValue} Today</b>`: `<b class="trend-down">${trendValue} Today</b>`} 
       </div>
     </article>
   `;
@@ -76,7 +76,7 @@
       return `
     <article class="card service-${service}">
       <div class="card-info">
-        <p class ="card-value">${label}</p>
+        <b class ="card-value">${label}</b>
         <img src="./src/images/icon-${service}.svg" alt="${service}">
       </div>
 
@@ -84,7 +84,7 @@
         <p class="card-number">${value}</p>
         <div class="card-metric is-${trend}">
           <img src="./src/images/icon-${trend}.svg" alt="${trend}">
-          ${trend == "up" ? `<p class ="trend-up">${percent}%</p>`: `<p class="trend-down">${percent}%</p>`} 
+          ${trend == "up" ? `<b class ="trend-up">${percent}%</b>`: `<b class="trend-down">${percent}%</b>`} 
         </div>
       </div>
     </article>
