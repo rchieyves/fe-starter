@@ -32,16 +32,17 @@ body {
   header{
     width: 50%;
     float: left;
-    margin: 2em 0 2em 0;
+    margin: 3em 0 4em 0;
     .total{
       color: hsl(228, 34%, 66%);
+      font-weight: bold;
     }
   }
 
   aside{
     width: 50%;
     float: right;
-    margin-top: 2rem;
+    margin-top: 3rem;
     color: hsl(228, 34%, 66%);
     font-weight: bold;
   }
@@ -168,6 +169,7 @@ body {
       gap: 5px;
       color: hsl(228, 34%, 66%);
       font-size: 14px;
+      font-weight: bold;
     }
   }
 }
@@ -200,10 +202,12 @@ body {
 
       .trend-up{
         color:  hsl(163, 72%, 41%);
+        font-weight: bold;
       }
 
       .trend-down{
         color: hsl(356, 69%, 56%);
+        font-weight: bold;
       }
 
       img{
@@ -236,6 +240,7 @@ body {
 
       .card-value{
         color: hsl(228, 34%, 66%);
+        font-weight: bold;
       }
     }
 
@@ -259,10 +264,12 @@ body {
 
         .trend-up{
           color:  hsl(163, 72%, 41%);
+          font-weight: bold;
         }
 
         .trend-down{
           color: hsl(356, 69%, 56%);
+          font-weight: bold;
         }
 
         img{

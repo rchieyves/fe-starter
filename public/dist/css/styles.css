@@ -148,15 +148,16 @@ body {
 .content header {
   width: 50%;
   float: left;
-  margin: 2em 0 2em 0;
+  margin: 3em 0 4em 0;
 }
 .content header .total {
   color: #8b97c6;
+  font-weight: bold;
 }
 .content aside {
   width: 50%;
   float: right;
-  margin-top: 2rem;
+  margin-top: 3rem;
   color: #8b97c6;
   font-weight: bold;
 }
@@ -260,6 +261,7 @@ body {
   gap: 5px;
   color: #8b97c6;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .primary-cards .card .card-main .card-number {
@@ -282,9 +284,11 @@ body {
 }
 .primary-cards .card .card-metric .trend-up {
   color: #1db489;
+  font-weight: bold;
 }
 .primary-cards .card .card-metric .trend-down {
   color: #dc414c;
+  font-weight: bold;
 }
 .primary-cards .card .card-metric img {
   height: 6px;
@@ -311,6 +315,7 @@ body {
 }
 .supporting-cards .card .card-info .card-value {
   color: #8b97c6;
+  font-weight: bold;
 }
 .supporting-cards .card .card-main {
   margin-top: 35px;
@@ -329,9 +334,11 @@ body {
 }
 .supporting-cards .card .card-main .card-metric .trend-up {
   color: #1db489;
+  font-weight: bold;
 }
 .supporting-cards .card .card-main .card-metric .trend-down {
   color: #dc414c;
+  font-weight: bold;
 }
 .supporting-cards .card .card-main .card-metric img {
   height: 6px;

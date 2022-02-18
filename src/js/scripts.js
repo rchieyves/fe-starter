@@ -51,7 +51,7 @@ function renderPrimaryCard(card) {
     <article class="card service-${service}">
       <div class="card-user">
         <img src="./src/images/icon-${service}.svg" alt="${service}">
-        ${username ? `<b>@${username}</b>` : ''}
+        ${username ? `<p>@${username}</p>` : ''}
       </div>
 
       <div class="card-main">
@@ -61,7 +61,7 @@ function renderPrimaryCard(card) {
 
       <div class="card-metric is-${trend}">
         <img src="./src/images/icon-${trend}.svg" alt="${trend}">
-        ${trend == "up" ? `<b class ="trend-up">${trendValue} Today</b>`: `<b class="trend-down">${trendValue} Today</b>`} 
+        ${trend == "up" ? `<p class ="trend-up">${trendValue} Today</p>`: `<p class="trend-down">${trendValue} Today</p>`} 
       </div>
     </article>
   `;
@@ -74,7 +74,7 @@ function renderSupportingCard(card){
     return `
     <article class="card service-${service}">
       <div class="card-info">
-        <b class ="card-value">${label}</b>
+        <p class ="card-value">${label}</p>
         <img src="./src/images/icon-${service}.svg" alt="${service}">
       </div>
 
@@ -82,7 +82,7 @@ function renderSupportingCard(card){
         <p class="card-number">${value}</p>
         <div class="card-metric is-${trend}">
           <img src="./src/images/icon-${trend}.svg" alt="${trend}">
-          ${trend == "up" ? `<b class ="trend-up">${percent}%</b>`: `<b class="trend-down">${percent}%</b>`} 
+          ${trend == "up" ? `<p class ="trend-up">${percent}%</p>`: `<p class="trend-down">${percent}%</p>`} 
         </div>
       </div>
     </article>
